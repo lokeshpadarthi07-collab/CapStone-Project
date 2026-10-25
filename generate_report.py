@@ -118,7 +118,7 @@ def build_pdf_report(output_filename: str = "report.pdf"):
     story.append(Paragraph("VoiceOps 2026: ZentroMart AI Customer Support Agent", title_style))
     story.append(Paragraph(
         "<b>LLM & Generative AI Capstone</b> | Consulting & Analytics Club, IIT Guwahati × Gnani.ai<br/>"
-        "<b>Team:</b> Team_VoiceOps_2026",
+        "<b>Team:</b> Team_VoiceOps_2026 &nbsp;|&nbsp; <b>GitHub:</b> <a href='https://github.com/lokeshpadarthi07-collab/CapStone-Project' color='#2563EB'><u>https://github.com/lokeshpadarthi07-collab/CapStone-Project</u></a>",
         subtitle_style
     ))
     story.append(HRFlowable(width="100%", thickness=1, color=colors.HexColor("#E2E8F0"), spaceAfter=8))
@@ -350,9 +350,10 @@ def build_pdf_report(output_filename: str = "report.pdf"):
 
     story.append(HRFlowable(width="100%", thickness=0.5, color=colors.HexColor("#CBD5E1"), spaceAfter=6))
     story.append(Paragraph(
-        "<b>Repository & Run Command:</b> <code>python run.py --audio-dir ./input_audio --output-dir ./sample_outputs</code> | "
-        "<b>Evaluation Suite:</b> <code>python run.py --evaluate</code>",
-        ParagraphStyle("Footnote", parent=styles["Normal"], fontSize=8, fontName="Helvetica-Oblique", textColor=colors.HexColor("#64748B"))
+        "<b>GitHub Repository:</b> <a href='https://github.com/lokeshpadarthi07-collab/CapStone-Project' color='#2563EB'><u>https://github.com/lokeshpadarthi07-collab/CapStone-Project</u></a><br/>"
+        "<b>Run Commands:</b> <code>python run.py --audio-dir ./input_audio --output-dir ./sample_outputs</code> | "
+        "<b>Evaluation:</b> <code>python run.py --evaluate</code>",
+        ParagraphStyle("Footnote", parent=styles["Normal"], fontSize=8, fontName="Helvetica", textColor=colors.HexColor("#64748B"), leading=11)
     ))
 
     # Build PDF
