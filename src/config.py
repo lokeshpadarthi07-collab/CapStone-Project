@@ -47,4 +47,8 @@ OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY", "")
 
 # Output directories
 OUTPUTS_DIR = BASE_DIR / "sample_outputs"
-OUTPUTS_DIR.mkdir(parents=True, exist_ok=True)
+try:
+    OUTPUTS_DIR.mkdir(parents=True, exist_ok=True)
+except Exception:
+    pass
+

@@ -8,7 +8,10 @@ Deployable on Vercel via exported WSGI entrypoint (`app` / `handler`).
 import os
 import json
 import time
-import streamlit as st
+try:
+    import streamlit as st
+except Exception:
+    st = None
 from pathlib import Path
 from src.agent import ZentroMartAgent
 from src.retriever import ZentroMartRetriever
@@ -228,7 +231,7 @@ def run_streamlit():
 
 
 # Run Streamlit UI if in Streamlit execution context
-if hasattr(st, "runtime") and st.runtime.exists():
+if st is not None and hasattr(st, "runtime") and st.runtime.exists():
     run_streamlit()
 
 
@@ -364,6 +367,14 @@ from fastapi import FastAPI, Request
 from fastapi.responses import HTMLResponse, JSONResponse, FileResponse, Response
 
 app = FastAPI(title="ZentroMart VoiceOps 2026", description="Interactive Customer Support Agent API")
+
+@app.exception_handler(Exception)
+async def global_exception_handler(request: Request, exc: Exception):
+    import traceback
+    return HTMLResponse(
+        content=f"<h3>Server Error (500)</h3><pre>{traceback.format_exc()}</pre>",
+        status_code=500
+    )
 
 @app.get("/", response_class=HTMLResponse)
 def index():

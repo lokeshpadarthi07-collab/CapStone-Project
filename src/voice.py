@@ -168,7 +168,10 @@ class VoicePipeline:
         """Synthesize agent text into speech audio WAV file."""
         spoken_text = normalize_text_for_speech(text)
         out_path = Path(output_path)
-        out_path.parent.mkdir(parents=True, exist_ok=True)
+        try:
+            out_path.parent.mkdir(parents=True, exist_ok=True)
+        except Exception:
+            pass
 
         if self.use_live_gnani and self.tts_client:
             try:
