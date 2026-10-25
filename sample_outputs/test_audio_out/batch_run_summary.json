@@ -17,7 +17,7 @@
         "CAN-1",
         "IDV-1"
       ],
-      "processing_time_sec": 0.12
+      "processing_time_sec": 0.062
     },
     {
       "index": 2,
@@ -33,7 +33,7 @@
         "CAN-3",
         "IDV-1"
       ],
-      "processing_time_sec": 0.11
+      "processing_time_sec": 0.053
     }
   ]
 }
