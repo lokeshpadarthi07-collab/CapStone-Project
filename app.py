@@ -360,46 +360,49 @@ _VERCEL_HTML = """<!DOCTYPE html>
 </html>
 """
 
-def app(environ, start_response):
-    """WSGI callable exported for Vercel Serverless Function runtime."""
-    path = environ.get("PATH_INFO", "/")
-    method = environ.get("REQUEST_METHOD", "GET").upper()
+from fastapi import FastAPI, Request
+from fastapi.responses import HTMLResponse, JSONResponse, FileResponse, Response
 
-    if path == "/" or path == "/index.html":
-        start_response("200 OK", [("Content-Type", "text/html; charset=utf-8")])
-        return [_VERCEL_HTML.encode("utf-8")]
+app = FastAPI(title="ZentroMart VoiceOps 2026", description="Interactive Customer Support Agent API")
 
-    if path == "/api/chat" and method == "POST":
-        try:
-            content_length = int(environ.get("CONTENT_LENGTH", 0))
-            body = environ["wsgi.input"].read(content_length).decode("utf-8")
-            data = json.loads(body)
-            msg = data.get("message", "")
-            agent = _get_vercel_agent()
-            reply = agent.respond(msg)
-            resp = json.dumps({"reply": reply, "evidence": getattr(agent, "last_retrieved_evidence", [])})
-            start_response("200 OK", [("Content-Type", "application/json; charset=utf-8")])
-            return [resp.encode("utf-8")]
-        except Exception as e:
-            start_response("500 Internal Server Error", [("Content-Type", "application/json")])
-            return [json.dumps({"error": str(e)}).encode("utf-8")]
+@app.get("/", response_class=HTMLResponse)
+def index():
+    return HTMLResponse(content=_VERCEL_HTML)
 
-    if path == "/report.pdf":
-        p = Path(__file__).resolve().parent / "report.pdf"
-        if p.exists():
-            start_response("200 OK", [("Content-Type", "application/pdf"), ("Content-Disposition", "inline; filename=report.pdf")])
-            return [p.read_bytes()]
+@app.get("/index.html", response_class=HTMLResponse)
+def index_html():
+    return HTMLResponse(content=_VERCEL_HTML)
 
-    if path == "/team_voiceops_2026_voiceops.zip":
-        p = Path(__file__).resolve().parent / "team_voiceops_2026_voiceops.zip"
-        if p.exists():
-            start_response("200 OK", [("Content-Type", "application/zip"), ("Content-Disposition", "attachment; filename=team_voiceops_2026_voiceops.zip")])
-            return [p.read_bytes()]
+@app.post("/api/chat")
+async def chat_endpoint(request: Request):
+    try:
+        data = await request.json()
+        msg = data.get("message", "")
+        agent = _get_vercel_agent()
+        reply = agent.respond(msg)
+        return JSONResponse({
+            "reply": reply,
+            "evidence": getattr(agent, "last_retrieved_evidence", [])
+        })
+    except Exception as e:
+        return JSONResponse({"error": str(e)}, status_code=500)
 
-    start_response("404 Not Found", [("Content-Type", "text/plain")])
-    return [b"Not Found"]
+@app.get("/report.pdf")
+def get_report():
+    p = Path(__file__).resolve().parent / "report.pdf"
+    if p.exists():
+        return FileResponse(p, media_type="application/pdf", filename="report.pdf")
+    return Response(content="Report not found", status_code=404)
+
+@app.get("/team_voiceops_2026_voiceops.zip")
+def get_zip():
+    p = Path(__file__).resolve().parent / "team_voiceops_2026_voiceops.zip"
+    if p.exists():
+        return FileResponse(p, media_type="application/zip", filename="team_voiceops_2026_voiceops.zip")
+    return Response(content="Archive not found", status_code=404)
 
 
 # Vercel entrypoint aliases
 handler = app
 application = app
+
