@@ -1,0 +1,39 @@
+{
+  "total_files": 2,
+  "processed_files": 2,
+  "output_directory": "sample_outputs\\test_audio_out",
+  "results": [
+    {
+      "index": 1,
+      "input_file": "customer_sample_1.wav",
+      "transcript": "Customer inquiry from customer sample 1",
+      "reply_text": "Hello, I am ZentroMart's AI support assistant. According to our Verifying the customer policy [IDV-2]: Ask for the order ID, then ask for **one** of: the last 4 digits of the registered phone number, or the delivery pincode for that order.",
+      "reply_audio_file": "reply_customer_sample_1.wav",
+      "retrieved_evidence_sections": [
+        "IDV-2",
+        "IDV-3",
+        "REF-2",
+        "RET-3",
+        "CAN-1",
+        "IDV-1"
+      ],
+      "processing_time_sec": 0.12
+    },
+    {
+      "index": 2,
+      "input_file": "customer_sample_2.wav",
+      "transcript": "Customer inquiry from customer sample 2",
+      "reply_text": "According to our Verifying the customer policy [IDV-2]: Ask for the order ID, then ask for **one** of: the last 4 digits of the registered phone number, or the delivery pincode for that order.",
+      "reply_audio_file": "reply_customer_sample_2.wav",
+      "retrieved_evidence_sections": [
+        "IDV-2",
+        "IDV-3",
+        "REF-2",
+        "CAN-1",
+        "CAN-3",
+        "IDV-1"
+      ],
+      "processing_time_sec": 0.11
+    }
+  ]
+}

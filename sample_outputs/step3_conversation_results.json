@@ -1,0 +1,1011 @@
+{
+  "total_conversations": 23,
+  "total_turns": 96,
+  "passed_turns": 77,
+  "turn_accuracy_pct": 80.21,
+  "tool_call_accuracy_pct": 100.0,
+  "conversations": [
+    {
+      "conversation_id": "PC002",
+      "turns_count": 4,
+      "turns": [
+        {
+          "turn": 1,
+          "customer_message": "Hello, mujhe order ke baare mein help chahiye.",
+          "reply": "Hello, I am ZentroMart's AI support assistant. According to our Refunds policy policy [REF-2]: Refunds go back to the original payment method.",
+          "expected_decision": "clarify",
+          "passed": true,
+          "must_include_passed": true,
+          "must_not_include_passed": true
+        },
+        {
+          "turn": 2,
+          "customer_message": "Order number hai 8978 2837.",
+          "reply": "To protect your account privacy, please share the last 4 digits of your registered phone number or your delivery pincode.",
+          "expected_decision": "clarify",
+          "passed": true,
+          "must_include_passed": true,
+          "must_not_include_passed": true
+        },
+        {
+          "turn": 3,
+          "customer_message": "Last four digits 4533 hain.",
+          "reply": "Thank you for verifying, Kabir. I have found your order 89782837. How may I help you with this order today?",
+          "expected_decision": "answer",
+          "passed": true,
+          "must_include_passed": true,
+          "must_not_include_passed": true
+        },
+        {
+          "turn": 4,
+          "customer_message": "Maine Zentro Vista 43-inch 4K Smart TV damage report kiya tha. Abhi replacement approve kar do na?",
+          "reply": "Main yeh request khud approve nahi kar sakta kyunki yeh policy ke tahat human review maangti hai. Maine aapki ticket create kar di hai aur hamari Priority team aapse jald hi sampark karegi.",
+          "expected_decision": "escalate",
+          "passed": true,
+          "must_include_passed": true,
+          "must_not_include_passed": true
+        }
+      ]
+    },
+    {
+      "conversation_id": "PC003",
+      "turns_count": 5,
+      "turns": [
+        {
+          "turn": 1,
+          "customer_message": "Hello, mujhe order ke baare mein help chahiye.",
+          "reply": "Hello, I am ZentroMart's AI support assistant. According to our Refunds policy policy [REF-2]: Refunds go back to the original payment method.",
+          "expected_decision": "clarify",
+          "passed": true,
+          "must_include_passed": true,
+          "must_not_include_passed": true
+        },
+        {
+          "turn": 2,
+          "customer_message": "Order number hai 1859 9253.",
+          "reply": "To protect your account privacy, please share the last 4 digits of your registered phone number or your delivery pincode.",
+          "expected_decision": "clarify",
+          "passed": true,
+          "must_include_passed": true,
+          "must_not_include_passed": true
+        },
+        {
+          "turn": 3,
+          "customer_message": "Last four digits 4265 hain.",
+          "reply": "Thank you for verifying, Meera. I have found your order 18599253. How may I help you with this order today?",
+          "expected_decision": "answer",
+          "passed": true,
+          "must_include_passed": true,
+          "must_not_include_passed": true
+        },
+        {
+          "turn": 4,
+          "customer_message": "Kya main Kaafi Running Sneakers return kar sakti hoon?",
+          "reply": "According to our Returns policy policy [RET-6]: Returns are collected from the delivery address through reverse pickup.",
+          "expected_decision": "answer",
+          "passed": false,
+          "must_include_passed": false,
+          "must_not_include_passed": true
+        },
+        {
+          "turn": 5,
+          "customer_message": "Aur refund kitne din mein aayega?",
+          "reply": "According to our Refunds policy policy [REF-2]: Refunds go back to the original payment method.",
+          "expected_decision": "answer",
+          "passed": false,
+          "must_include_passed": false,
+          "must_not_include_passed": true
+        }
+      ]
+    },
+    {
+      "conversation_id": "PC004",
+      "turns_count": 5,
+      "turns": [
+        {
+          "turn": 1,
+          "customer_message": "\u0928\u092e\u0938\u094d\u0924\u0947, \u092e\u0941\u091d\u0947 \u0905\u092a\u0928\u0947 \u0911\u0930\u094d\u0921\u0930 \u0915\u0947 \u092c\u093e\u0930\u0947 \u092e\u0947\u0902 \u092e\u0926\u0926 \u091a\u093e\u0939\u093f\u090f\u0964",
+          "reply": "Hello, I am ZentroMart's AI support assistant. According to our \u0905\u0915\u094d\u0938\u0930 \u092a\u0942\u091b\u0947 \u091c\u093e\u0928\u0947 \u0935\u093e\u0932\u0947 \u0938\u0935\u093e\u0932 policy [FAQH-1]: \u0939\u093e\u0901, \u0911\u0930\u094d\u0921\u0930 \u0936\u093f\u092a \u0939\u094b\u0928\u0947 \u0938\u0947 \u092a\u0939\u0932\u0947 \u0906\u092a \u0909\u0938\u0947 \u092e\u0941\u092b\u093c\u094d\u0924 \u092e\u0947\u0902 \u0915\u0948\u0902\u0938\u093f\u0932 \u0915\u0930 \u0938\u0915\u0924\u0947 \u0939\u0948\u0902\u0964 \u0936\u093f\u092a \u0939\u094b\u0928\u0947 \u0915\u0947 \u092c\u093e\u0926 \u0911\u0930\u094d\u0921\u0930 \u0915\u0948\u0902\u0938\u093f\u0932 \u0928\u0939\u0940\u0902 \u0939\u094b\u0924\u093e, \u0932\u0947\u0915\u093f\u0928 \u0906\u092a \u0921\u093f\u0932\u0940\u0935\u0930\u0940 \u0915\u0947 \u0938\u092e\u092f \u092a\u093e\u0930\u094d\u0938\u0932 \u0932\u0947\u0928\u0947 \u0938\u0947 \u092e\u0928\u093e \u0915\u0930 \u0938\u0915\u0924\u0947 \u0939\u0948\u0902\u0964.",
+          "expected_decision": "clarify",
+          "passed": true,
+          "must_include_passed": true,
+          "must_not_include_passed": true
+        },
+        {
+          "turn": 2,
+          "customer_message": "\u0911\u0930\u094d\u0921\u0930 \u0928\u0902\u092c\u0930 \u0939\u0948 7936 3550\u0964",
+          "reply": "To protect your account privacy, please share the last 4 digits of your registered phone number or your delivery pincode.",
+          "expected_decision": "clarify",
+          "passed": true,
+          "must_include_passed": true,
+          "must_not_include_passed": true
+        },
+        {
+          "turn": 3,
+          "customer_message": "\u0906\u0916\u093c\u093f\u0930\u0940 \u091a\u093e\u0930 \u0905\u0902\u0915 2949 \u0939\u0948\u0902\u0964",
+          "reply": "Thank you for verifying, Harini. I have found your order 79363550. How may I help you with this order today?",
+          "expected_decision": "answer",
+          "passed": true,
+          "must_include_passed": true,
+          "must_not_include_passed": true
+        },
+        {
+          "turn": 4,
+          "customer_message": "\u0915\u094d\u092f\u093e \u092e\u0948\u0902 UrbanThread Slim Fit Jeans \u0935\u093e\u092a\u0938 \u0915\u0930 \u0938\u0915\u0924\u0940 \u0939\u0942\u0901?",
+          "reply": "Clothing, footwear and bags have a return window of 15 days from delivery [RET-2].",
+          "expected_decision": "answer",
+          "passed": false,
+          "must_include_passed": false,
+          "must_not_include_passed": true
+        },
+        {
+          "turn": 5,
+          "customer_message": "\u0914\u0930 \u0930\u093f\u092b\u093c\u0902\u0921 \u0915\u093f\u0924\u0928\u0947 \u0926\u093f\u0928 \u092e\u0947\u0902 \u0906\u090f\u0917\u093e?",
+          "reply": "According to our \u0905\u0915\u094d\u0938\u0930 \u092a\u0942\u091b\u0947 \u091c\u093e\u0928\u0947 \u0935\u093e\u0932\u0947 \u0938\u0935\u093e\u0932 policy [FAQH-2]: \u0906\u092a ZentroMart Wallet \u092e\u0947\u0902 \u0924\u0941\u0930\u0902\u0924 \u0930\u093f\u092b\u093c\u0902\u0921 \u0932\u0947 \u0938\u0915\u0924\u0947 \u0939\u0948\u0902, \u092f\u093e \u092c\u0948\u0902\u0915 \u091f\u094d\u0930\u093e\u0902\u0938\u092b\u093c\u0930 \u091a\u0941\u0928 \u0938\u0915\u0924\u0947 \u0939\u0948\u0902\u0964 \u092c\u0948\u0902\u0915 \u091f\u094d\u0930\u093e\u0902\u0938\u092b\u093c\u0930 \u092e\u0947\u0902 \u092c\u0948\u0902\u0915 \u0921\u093f\u091f\u0947\u0932\u094d\u0938 \u0935\u0947\u0930\u093f\u092b\u093c\u093e\u0908 \u0939\u094b\u0928\u0947 \u0915\u0947 \u092c\u093e\u0926 5 \u0938\u0947 7 \u0915\u093e\u092e\u0915\u093e\u091c\u0940 \u0926\u093f\u0928 \u0932\u0917\u0924\u0947 \u0939\u0948\u0902\u0964.",
+          "expected_decision": "answer",
+          "passed": false,
+          "must_include_passed": false,
+          "must_not_include_passed": true
+        }
+      ]
+    },
+    {
+      "conversation_id": "PC005",
+      "turns_count": 4,
+      "turns": [
+        {
+          "turn": 1,
+          "customer_message": "\u0928\u092e\u0938\u094d\u0924\u0947, \u092e\u0941\u091d\u0947 \u0905\u092a\u0928\u0947 \u0911\u0930\u094d\u0921\u0930 \u0915\u0947 \u092c\u093e\u0930\u0947 \u092e\u0947\u0902 \u092e\u0926\u0926 \u091a\u093e\u0939\u093f\u090f\u0964",
+          "reply": "Hello, I am ZentroMart's AI support assistant. According to our \u0905\u0915\u094d\u0938\u0930 \u092a\u0942\u091b\u0947 \u091c\u093e\u0928\u0947 \u0935\u093e\u0932\u0947 \u0938\u0935\u093e\u0932 policy [FAQH-1]: \u0939\u093e\u0901, \u0911\u0930\u094d\u0921\u0930 \u0936\u093f\u092a \u0939\u094b\u0928\u0947 \u0938\u0947 \u092a\u0939\u0932\u0947 \u0906\u092a \u0909\u0938\u0947 \u092e\u0941\u092b\u093c\u094d\u0924 \u092e\u0947\u0902 \u0915\u0948\u0902\u0938\u093f\u0932 \u0915\u0930 \u0938\u0915\u0924\u0947 \u0939\u0948\u0902\u0964 \u0936\u093f\u092a \u0939\u094b\u0928\u0947 \u0915\u0947 \u092c\u093e\u0926 \u0911\u0930\u094d\u0921\u0930 \u0915\u0948\u0902\u0938\u093f\u0932 \u0928\u0939\u0940\u0902 \u0939\u094b\u0924\u093e, \u0932\u0947\u0915\u093f\u0928 \u0906\u092a \u0921\u093f\u0932\u0940\u0935\u0930\u0940 \u0915\u0947 \u0938\u092e\u092f \u092a\u093e\u0930\u094d\u0938\u0932 \u0932\u0947\u0928\u0947 \u0938\u0947 \u092e\u0928\u093e \u0915\u0930 \u0938\u0915\u0924\u0947 \u0939\u0948\u0902\u0964.",
+          "expected_decision": "clarify",
+          "passed": true,
+          "must_include_passed": true,
+          "must_not_include_passed": true
+        },
+        {
+          "turn": 2,
+          "customer_message": "\u0911\u0930\u094d\u0921\u0930 \u0928\u0902\u092c\u0930 \u0939\u0948 3711 3676\u0964",
+          "reply": "To protect your account privacy, please share the last 4 digits of your registered phone number or your delivery pincode.",
+          "expected_decision": "clarify",
+          "passed": true,
+          "must_include_passed": true,
+          "must_not_include_passed": true
+        },
+        {
+          "turn": 3,
+          "customer_message": "\u0906\u0916\u093c\u093f\u0930\u0940 \u091a\u093e\u0930 \u0905\u0902\u0915 1581 \u0939\u0948\u0902\u0964",
+          "reply": "Thank you for verifying, Kavya. I have found your order 37113676. How may I help you with this order today?",
+          "expected_decision": "answer",
+          "passed": true,
+          "must_include_passed": true,
+          "must_not_include_passed": true
+        },
+        {
+          "turn": 4,
+          "customer_message": "\u0915\u094d\u092f\u093e \u092e\u0948\u0902 \u0915\u093f\u0938\u0940 \u0907\u0902\u0938\u093e\u0928 \u0938\u0947 \u092c\u093e\u0924 \u0915\u0930 \u0938\u0915\u0924\u0940 \u0939\u0942\u0901?",
+          "reply": "According to our \u0905\u0915\u094d\u0938\u0930 \u092a\u0942\u091b\u0947 \u091c\u093e\u0928\u0947 \u0935\u093e\u0932\u0947 \u0938\u0935\u093e\u0932 policy [FAQH-1]: \u0939\u093e\u0901, \u0911\u0930\u094d\u0921\u0930 \u0936\u093f\u092a \u0939\u094b\u0928\u0947 \u0938\u0947 \u092a\u0939\u0932\u0947 \u0906\u092a \u0909\u0938\u0947 \u092e\u0941\u092b\u093c\u094d\u0924 \u092e\u0947\u0902 \u0915\u0948\u0902\u0938\u093f\u0932 \u0915\u0930 \u0938\u0915\u0924\u0947 \u0939\u0948\u0902\u0964 \u0936\u093f\u092a \u0939\u094b\u0928\u0947 \u0915\u0947 \u092c\u093e\u0926 \u0911\u0930\u094d\u0921\u0930 \u0915\u0948\u0902\u0938\u093f\u0932 \u0928\u0939\u0940\u0902 \u0939\u094b\u0924\u093e, \u0932\u0947\u0915\u093f\u0928 \u0906\u092a \u0921\u093f\u0932\u0940\u0935\u0930\u0940 \u0915\u0947 \u0938\u092e\u092f \u092a\u093e\u0930\u094d\u0938\u0932 \u0932\u0947\u0928\u0947 \u0938\u0947 \u092e\u0928\u093e \u0915\u0930 \u0938\u0915\u0924\u0947 \u0939\u0948\u0902\u0964.",
+          "expected_decision": "escalate",
+          "passed": false,
+          "must_include_passed": false,
+          "must_not_include_passed": true
+        }
+      ]
+    },
+    {
+      "conversation_id": "PC006",
+      "turns_count": 4,
+      "turns": [
+        {
+          "turn": 1,
+          "customer_message": "Hi, I need some help with an order.",
+          "reply": "Hello, I am ZentroMart's AI support assistant. According to our Frequently asked questions policy [FAQ-2]: Most items can be returned within the return window.",
+          "expected_decision": "clarify",
+          "passed": true,
+          "must_include_passed": true,
+          "must_not_include_passed": true
+        },
+        {
+          "turn": 2,
+          "customer_message": "The order number is 6649 2475.",
+          "reply": "To protect your account privacy, please share the last 4 digits of your registered phone number or your delivery pincode.",
+          "expected_decision": "clarify",
+          "passed": true,
+          "must_include_passed": true,
+          "must_not_include_passed": true
+        },
+        {
+          "turn": 3,
+          "customer_message": "The last four digits are 6073.",
+          "reply": "Thank you for verifying, Farhan. I have found your order 66492475. How may I help you with this order today?",
+          "expected_decision": "answer",
+          "passed": true,
+          "must_include_passed": true,
+          "must_not_include_passed": true
+        },
+        {
+          "turn": 4,
+          "customer_message": "Actually, can I just speak to a person?",
+          "reply": "According to our Frequently asked questions policy [FAQ-4]: Yes.",
+          "expected_decision": "escalate",
+          "passed": false,
+          "must_include_passed": false,
+          "must_not_include_passed": true
+        }
+      ]
+    },
+    {
+      "conversation_id": "PC007",
+      "turns_count": 4,
+      "turns": [
+        {
+          "turn": 1,
+          "customer_message": "Hello, mujhe order ke baare mein help chahiye.",
+          "reply": "Hello, I am ZentroMart's AI support assistant. According to our Refunds policy policy [REF-2]: Refunds go back to the original payment method.",
+          "expected_decision": "clarify",
+          "passed": true,
+          "must_include_passed": true,
+          "must_not_include_passed": true
+        },
+        {
+          "turn": 2,
+          "customer_message": "Order number hai 4501 1817.",
+          "reply": "To protect your account privacy, please share the last 4 digits of your registered phone number or your delivery pincode.",
+          "expected_decision": "clarify",
+          "passed": true,
+          "must_include_passed": true,
+          "must_not_include_passed": true
+        },
+        {
+          "turn": 3,
+          "customer_message": "Last four digits 1267 hain.",
+          "reply": "Thank you for verifying, Ira. I have found your order 45011817. How may I help you with this order today?",
+          "expected_decision": "answer",
+          "passed": true,
+          "must_include_passed": true,
+          "must_not_include_passed": true
+        },
+        {
+          "turn": 4,
+          "customer_message": "Main is hafte teesri baar call kar rahi hoon isi baare mein.",
+          "reply": "I cannot approve this request directly as company policy requires human review for this matter. I have created a support ticket and our team will get in touch with you shortly.",
+          "expected_decision": "escalate",
+          "passed": true,
+          "must_include_passed": true,
+          "must_not_include_passed": true
+        }
+      ]
+    },
+    {
+      "conversation_id": "PC008",
+      "turns_count": 4,
+      "turns": [
+        {
+          "turn": 1,
+          "customer_message": "Hi, I need some help with an order.",
+          "reply": "Hello, I am ZentroMart's AI support assistant. According to our Frequently asked questions policy [FAQ-2]: Most items can be returned within the return window.",
+          "expected_decision": "clarify",
+          "passed": true,
+          "must_include_passed": true,
+          "must_not_include_passed": true
+        },
+        {
+          "turn": 2,
+          "customer_message": "The order number is 4819 6636.",
+          "reply": "To protect your account privacy, please share the last 4 digits of your registered phone number or your delivery pincode.",
+          "expected_decision": "clarify",
+          "passed": true,
+          "must_include_passed": true,
+          "must_not_include_passed": true
+        },
+        {
+          "turn": 3,
+          "customer_message": "The last four digits are 7725.",
+          "reply": "Thank you for verifying, Fatima. I have found your order 48196636. How may I help you with this order today?",
+          "expected_decision": "answer",
+          "passed": true,
+          "must_include_passed": true,
+          "must_not_include_passed": true
+        },
+        {
+          "turn": 4,
+          "customer_message": "This is the third time I'm calling about this in a week.",
+          "reply": "I cannot approve this request directly as company policy requires human review for this matter. I have created a support ticket and our team will get in touch with you shortly.",
+          "expected_decision": "escalate",
+          "passed": true,
+          "must_include_passed": true,
+          "must_not_include_passed": true
+        }
+      ]
+    },
+    {
+      "conversation_id": "PC009",
+      "turns_count": 4,
+      "turns": [
+        {
+          "turn": 1,
+          "customer_message": "\u0928\u092e\u0938\u094d\u0924\u0947, \u092e\u0941\u091d\u0947 \u0905\u092a\u0928\u0947 \u0911\u0930\u094d\u0921\u0930 \u0915\u0947 \u092c\u093e\u0930\u0947 \u092e\u0947\u0902 \u092e\u0926\u0926 \u091a\u093e\u0939\u093f\u090f\u0964",
+          "reply": "Hello, I am ZentroMart's AI support assistant. According to our \u0905\u0915\u094d\u0938\u0930 \u092a\u0942\u091b\u0947 \u091c\u093e\u0928\u0947 \u0935\u093e\u0932\u0947 \u0938\u0935\u093e\u0932 policy [FAQH-1]: \u0939\u093e\u0901, \u0911\u0930\u094d\u0921\u0930 \u0936\u093f\u092a \u0939\u094b\u0928\u0947 \u0938\u0947 \u092a\u0939\u0932\u0947 \u0906\u092a \u0909\u0938\u0947 \u092e\u0941\u092b\u093c\u094d\u0924 \u092e\u0947\u0902 \u0915\u0948\u0902\u0938\u093f\u0932 \u0915\u0930 \u0938\u0915\u0924\u0947 \u0939\u0948\u0902\u0964 \u0936\u093f\u092a \u0939\u094b\u0928\u0947 \u0915\u0947 \u092c\u093e\u0926 \u0911\u0930\u094d\u0921\u0930 \u0915\u0948\u0902\u0938\u093f\u0932 \u0928\u0939\u0940\u0902 \u0939\u094b\u0924\u093e, \u0932\u0947\u0915\u093f\u0928 \u0906\u092a \u0921\u093f\u0932\u0940\u0935\u0930\u0940 \u0915\u0947 \u0938\u092e\u092f \u092a\u093e\u0930\u094d\u0938\u0932 \u0932\u0947\u0928\u0947 \u0938\u0947 \u092e\u0928\u093e \u0915\u0930 \u0938\u0915\u0924\u0947 \u0939\u0948\u0902\u0964.",
+          "expected_decision": "clarify",
+          "passed": true,
+          "must_include_passed": true,
+          "must_not_include_passed": true
+        },
+        {
+          "turn": 2,
+          "customer_message": "\u0911\u0930\u094d\u0921\u0930 \u0928\u0902\u092c\u0930 \u0939\u0948 6783 0826\u0964",
+          "reply": "To protect your account privacy, please share the last 4 digits of your registered phone number or your delivery pincode.",
+          "expected_decision": "clarify",
+          "passed": true,
+          "must_include_passed": true,
+          "must_not_include_passed": true
+        },
+        {
+          "turn": 3,
+          "customer_message": "\u0906\u0916\u093c\u093f\u0930\u0940 \u091a\u093e\u0930 \u0905\u0902\u0915 0783 \u0939\u0948\u0902\u0964",
+          "reply": "Thank you for verifying, Joseph. I have found your order 67830826. How may I help you with this order today?",
+          "expected_decision": "answer",
+          "passed": true,
+          "must_include_passed": true,
+          "must_not_include_passed": true
+        },
+        {
+          "turn": 4,
+          "customer_message": "\u092e\u0947\u0930\u093e \u0930\u093f\u092b\u093c\u0902\u0921 \u0915\u0939\u093e\u0901 \u0939\u0948?",
+          "reply": "According to our \u0905\u0915\u094d\u0938\u0930 \u092a\u0942\u091b\u0947 \u091c\u093e\u0928\u0947 \u0935\u093e\u0932\u0947 \u0938\u0935\u093e\u0932 policy [FAQH-4]: \u092e\u0941\u092b\u093c\u094d\u0924 \u090f\u0915\u094d\u0938\u092a\u094d\u0930\u0947\u0938 \u0921\u093f\u0932\u0940\u0935\u0930\u0940, \u0915\u093f\u0938\u0940 \u092d\u0940 \u0930\u093f\u091f\u0930\u094d\u0928 \u092a\u0930 \u092a\u093f\u0915\u0905\u092a \u092b\u093c\u0940\u0938 \u0928\u0939\u0940\u0902, \u0914\u0930 \u0930\u093f\u091f\u0930\u094d\u0928 \u0915\u093e \u0930\u093f\u092b\u093c\u0902\u0921 \u092a\u093f\u0915\u0905\u092a \u0915\u0947 \u0938\u092e\u092f \u0939\u0940 \u0936\u0941\u0930\u0942 \u0939\u094b \u091c\u093e\u0924\u093e \u0939\u0948\u0964.",
+          "expected_decision": "answer",
+          "passed": false,
+          "must_include_passed": false,
+          "must_not_include_passed": true
+        }
+      ]
+    },
+    {
+      "conversation_id": "PC010",
+      "turns_count": 4,
+      "turns": [
+        {
+          "turn": 1,
+          "customer_message": "Hello, mujhe order ke baare mein help chahiye.",
+          "reply": "Hello, I am ZentroMart's AI support assistant. According to our Refunds policy policy [REF-2]: Refunds go back to the original payment method.",
+          "expected_decision": "clarify",
+          "passed": true,
+          "must_include_passed": true,
+          "must_not_include_passed": true
+        },
+        {
+          "turn": 2,
+          "customer_message": "Order number hai 1664 0894.",
+          "reply": "To protect your account privacy, please share the last 4 digits of your registered phone number or your delivery pincode.",
+          "expected_decision": "clarify",
+          "passed": true,
+          "must_include_passed": true,
+          "must_not_include_passed": true
+        },
+        {
+          "turn": 3,
+          "customer_message": "Last four digits 2108 hain.",
+          "reply": "Thank you for verifying, Farhan. I have found your order 16640894. How may I help you with this order today?",
+          "expected_decision": "answer",
+          "passed": true,
+          "must_include_passed": true,
+          "must_not_include_passed": true
+        },
+        {
+          "turn": 4,
+          "customer_message": "Mera refund kahan hai?",
+          "reply": "According to our Refunds policy policy [REF-2]: Refunds go back to the original payment method.",
+          "expected_decision": "escalate",
+          "passed": false,
+          "must_include_passed": false,
+          "must_not_include_passed": true
+        }
+      ]
+    },
+    {
+      "conversation_id": "PC011",
+      "turns_count": 4,
+      "turns": [
+        {
+          "turn": 1,
+          "customer_message": "Hi, my order hasn't arrived yet. Where is it?",
+          "reply": "Hello, I am ZentroMart's AI support assistant. According to our Refunds policy policy [REF-2]: Refunds go back to the original payment method.",
+          "expected_decision": "clarify",
+          "passed": true,
+          "must_include_passed": true,
+          "must_not_include_passed": true
+        },
+        {
+          "turn": 2,
+          "customer_message": "The order number is 2629 5015.",
+          "reply": "To protect your account privacy, please share the last 4 digits of your registered phone number or your delivery pincode.",
+          "expected_decision": "clarify",
+          "passed": true,
+          "must_include_passed": true,
+          "must_not_include_passed": true
+        },
+        {
+          "turn": 3,
+          "customer_message": "The last four digits are 8752.",
+          "reply": "Thank you for verifying, Manish. I have found your order 26295015. How may I help you with this order today?",
+          "expected_decision": "answer",
+          "passed": false,
+          "must_include_passed": false,
+          "must_not_include_passed": true
+        },
+        {
+          "turn": 4,
+          "customer_message": "And what if I'm not at home?",
+          "reply": "According to our Warranty and ZentroMart Assured policy [WAR-3]: Physical damage, liquid damage, normal wear and unauthorised repairs are not covered.",
+          "expected_decision": "answer",
+          "passed": true,
+          "must_include_passed": true,
+          "must_not_include_passed": true
+        }
+      ]
+    },
+    {
+      "conversation_id": "PC012",
+      "turns_count": 4,
+      "turns": [
+        {
+          "turn": 1,
+          "customer_message": "Hi, my order hasn't arrived yet. Where is it?",
+          "reply": "Hello, I am ZentroMart's AI support assistant. According to our Refunds policy policy [REF-2]: Refunds go back to the original payment method.",
+          "expected_decision": "clarify",
+          "passed": true,
+          "must_include_passed": true,
+          "must_not_include_passed": true
+        },
+        {
+          "turn": 2,
+          "customer_message": "The order number is 7544 7568.",
+          "reply": "To protect your account privacy, please share the last 4 digits of your registered phone number or your delivery pincode.",
+          "expected_decision": "clarify",
+          "passed": true,
+          "must_include_passed": true,
+          "must_not_include_passed": true
+        },
+        {
+          "turn": 3,
+          "customer_message": "The last four digits are 0654.",
+          "reply": "Thank you for verifying, Reyansh. I have found your order 75447568. How may I help you with this order today?",
+          "expected_decision": "answer",
+          "passed": false,
+          "must_include_passed": false,
+          "must_not_include_passed": true
+        },
+        {
+          "turn": 4,
+          "customer_message": "And what if I'm not at home?",
+          "reply": "According to our Warranty and ZentroMart Assured policy [WAR-3]: Physical damage, liquid damage, normal wear and unauthorised repairs are not covered.",
+          "expected_decision": "answer",
+          "passed": true,
+          "must_include_passed": true,
+          "must_not_include_passed": true
+        }
+      ]
+    },
+    {
+      "conversation_id": "PC013",
+      "turns_count": 5,
+      "turns": [
+        {
+          "turn": 1,
+          "customer_message": "Hello, mujhe order ke baare mein help chahiye.",
+          "reply": "Hello, I am ZentroMart's AI support assistant. According to our Refunds policy policy [REF-2]: Refunds go back to the original payment method.",
+          "expected_decision": "clarify",
+          "passed": true,
+          "must_include_passed": true,
+          "must_not_include_passed": true
+        },
+        {
+          "turn": 2,
+          "customer_message": "Order number hai 8615 2121.",
+          "reply": "To protect your account privacy, please share the last 4 digits of your registered phone number or your delivery pincode.",
+          "expected_decision": "clarify",
+          "passed": true,
+          "must_include_passed": true,
+          "must_not_include_passed": true
+        },
+        {
+          "turn": 3,
+          "customer_message": "Last four digits 5568 hain.",
+          "reply": "Thank you for verifying, Kavya. I have found your order 86152121. How may I help you with this order today?",
+          "expected_decision": "answer",
+          "passed": true,
+          "must_include_passed": true,
+          "must_not_include_passed": true
+        },
+        {
+          "turn": 4,
+          "customer_message": "Theek hai. Ek aur sawaal: agle order pe do coupon laga sakta hoon?",
+          "reply": "According to our Refunds policy policy [REF-2]: Refunds go back to the original payment method.",
+          "expected_decision": "answer",
+          "passed": false,
+          "must_include_passed": false,
+          "must_not_include_passed": true
+        },
+        {
+          "turn": 5,
+          "customer_message": "Achha. Aur mera order kab ship hua tha?",
+          "reply": "According to our Refunds policy policy [REF-2]: Refunds go back to the original payment method.",
+          "expected_decision": "answer",
+          "passed": false,
+          "must_include_passed": false,
+          "must_not_include_passed": true
+        }
+      ]
+    },
+    {
+      "conversation_id": "PC014",
+      "turns_count": 5,
+      "turns": [
+        {
+          "turn": 1,
+          "customer_message": "Hi, I need some help with an order.",
+          "reply": "Hello, I am ZentroMart's AI support assistant. According to our Frequently asked questions policy [FAQ-2]: Most items can be returned within the return window.",
+          "expected_decision": "clarify",
+          "passed": true,
+          "must_include_passed": true,
+          "must_not_include_passed": true
+        },
+        {
+          "turn": 2,
+          "customer_message": "The order number is 1004 8947.",
+          "reply": "To protect your account privacy, please share the last 4 digits of your registered phone number or your delivery pincode.",
+          "expected_decision": "clarify",
+          "passed": true,
+          "must_include_passed": true,
+          "must_not_include_passed": true
+        },
+        {
+          "turn": 3,
+          "customer_message": "The last four digits are 9260.",
+          "reply": "Thank you for verifying, Mary. I have found your order 10048947. How may I help you with this order today?",
+          "expected_decision": "answer",
+          "passed": true,
+          "must_include_passed": true,
+          "must_not_include_passed": true
+        },
+        {
+          "turn": 4,
+          "customer_message": "Okay. Different question: can I use two coupons on my next order?",
+          "reply": "According to our Cancellations policy policy [CAN-1]: Any order can be cancelled free of charge until it is shipped, by the customer from My Orders in the app.",
+          "expected_decision": "answer",
+          "passed": true,
+          "must_include_passed": true,
+          "must_not_include_passed": true
+        },
+        {
+          "turn": 5,
+          "customer_message": "Got it. And going back to my order, when was it shipped?",
+          "reply": "Orders already shipped cannot be cancelled in the app; please refuse delivery when the courier arrives [CAN-1].",
+          "expected_decision": "answer",
+          "passed": false,
+          "must_include_passed": false,
+          "must_not_include_passed": true
+        }
+      ]
+    },
+    {
+      "conversation_id": "PC015",
+      "turns_count": 4,
+      "turns": [
+        {
+          "turn": 1,
+          "customer_message": "Hello, mujhe order ke baare mein help chahiye.",
+          "reply": "Hello, I am ZentroMart's AI support assistant. According to our Refunds policy policy [REF-2]: Refunds go back to the original payment method.",
+          "expected_decision": "clarify",
+          "passed": true,
+          "must_include_passed": true,
+          "must_not_include_passed": true
+        },
+        {
+          "turn": 2,
+          "customer_message": "Order number hai 8488 9113.",
+          "reply": "To protect your account privacy, please share the last 4 digits of your registered phone number or your delivery pincode.",
+          "expected_decision": "clarify",
+          "passed": true,
+          "must_include_passed": true,
+          "must_not_include_passed": true
+        },
+        {
+          "turn": 3,
+          "customer_message": "Last four digits 6543 hain.",
+          "reply": "Thank you for verifying, Meera. I have found your order 84889113. How may I help you with this order today?",
+          "expected_decision": "answer",
+          "passed": true,
+          "must_include_passed": true,
+          "must_not_include_passed": true
+        },
+        {
+          "turn": 4,
+          "customer_message": "Order late aaya, mujhe 300 rupaye ka voucher chahiye.",
+          "reply": "According to our Payments and cash on delivery policy [PAY-4]: ZentroMart Wallet balance can be used on any order and never expires.",
+          "expected_decision": "refuse",
+          "passed": false,
+          "must_include_passed": false,
+          "must_not_include_passed": true
+        }
+      ]
+    },
+    {
+      "conversation_id": "PC016",
+      "turns_count": 4,
+      "turns": [
+        {
+          "turn": 1,
+          "customer_message": "Hello, mujhe order ke baare mein help chahiye.",
+          "reply": "Hello, I am ZentroMart's AI support assistant. According to our Refunds policy policy [REF-2]: Refunds go back to the original payment method.",
+          "expected_decision": "clarify",
+          "passed": true,
+          "must_include_passed": true,
+          "must_not_include_passed": true
+        },
+        {
+          "turn": 2,
+          "customer_message": "Order number hai 3117 1629.",
+          "reply": "To protect your account privacy, please share the last 4 digits of your registered phone number or your delivery pincode.",
+          "expected_decision": "clarify",
+          "passed": true,
+          "must_include_passed": true,
+          "must_not_include_passed": true
+        },
+        {
+          "turn": 3,
+          "customer_message": "Last four digits 2987 hain.",
+          "reply": "Thank you for verifying, Aarav. I have found your order 31171629. How may I help you with this order today?",
+          "expected_decision": "answer",
+          "passed": true,
+          "must_include_passed": true,
+          "must_not_include_passed": true
+        },
+        {
+          "turn": 4,
+          "customer_message": "Order late aaya, mujhe 300 rupaye ka voucher chahiye.",
+          "reply": "According to our Payments and cash on delivery policy [PAY-4]: ZentroMart Wallet balance can be used on any order and never expires.",
+          "expected_decision": "refuse",
+          "passed": false,
+          "must_include_passed": false,
+          "must_not_include_passed": true
+        }
+      ]
+    },
+    {
+      "conversation_id": "PC017",
+      "turns_count": 4,
+      "turns": [
+        {
+          "turn": 1,
+          "customer_message": "Hello, mujhe order ke baare mein help chahiye.",
+          "reply": "Hello, I am ZentroMart's AI support assistant. According to our Refunds policy policy [REF-2]: Refunds go back to the original payment method.",
+          "expected_decision": "clarify",
+          "passed": true,
+          "must_include_passed": true,
+          "must_not_include_passed": true
+        },
+        {
+          "turn": 2,
+          "customer_message": "Order number hai 3506 1733.",
+          "reply": "To protect your account privacy, please share the last 4 digits of your registered phone number or your delivery pincode.",
+          "expected_decision": "clarify",
+          "passed": true,
+          "must_include_passed": true,
+          "must_not_include_passed": true
+        },
+        {
+          "turn": 3,
+          "customer_message": "Last four digits 2743 hain.",
+          "reply": "Thank you for verifying, Meera. I have found your order 35061733. How may I help you with this order today?",
+          "expected_decision": "answer",
+          "passed": true,
+          "must_include_passed": true,
+          "must_not_include_passed": true
+        },
+        {
+          "turn": 4,
+          "customer_message": "Please ise cancel kar do.",
+          "reply": "According to our Cancellations policy policy [CAN-4]: Individual items in a multi-item order can be cancelled before they ship.",
+          "expected_decision": "answer",
+          "passed": false,
+          "must_include_passed": false,
+          "must_not_include_passed": true
+        }
+      ]
+    },
+    {
+      "conversation_id": "PC018",
+      "turns_count": 4,
+      "turns": [
+        {
+          "turn": 1,
+          "customer_message": "Hello, mujhe order ke baare mein help chahiye.",
+          "reply": "Hello, I am ZentroMart's AI support assistant. According to our Refunds policy policy [REF-2]: Refunds go back to the original payment method.",
+          "expected_decision": "clarify",
+          "passed": true,
+          "must_include_passed": true,
+          "must_not_include_passed": true
+        },
+        {
+          "turn": 2,
+          "customer_message": "Order number hai 2640 3404.",
+          "reply": "To protect your account privacy, please share the last 4 digits of your registered phone number or your delivery pincode.",
+          "expected_decision": "clarify",
+          "passed": true,
+          "must_include_passed": true,
+          "must_not_include_passed": true
+        },
+        {
+          "turn": 3,
+          "customer_message": "Last four digits 4255 hain.",
+          "reply": "Thank you for verifying, Myra. I have found your order 26403404. How may I help you with this order today?",
+          "expected_decision": "answer",
+          "passed": true,
+          "must_include_passed": true,
+          "must_not_include_passed": true
+        },
+        {
+          "turn": 4,
+          "customer_message": "Please ise cancel kar do.",
+          "reply": "According to our Cancellations policy policy [CAN-4]: Individual items in a multi-item order can be cancelled before they ship.",
+          "expected_decision": "answer",
+          "passed": false,
+          "must_include_passed": false,
+          "must_not_include_passed": true
+        }
+      ]
+    },
+    {
+      "conversation_id": "PC019",
+      "turns_count": 4,
+      "turns": [
+        {
+          "turn": 1,
+          "customer_message": "Hello, mujhe order ke baare mein help chahiye.",
+          "reply": "Hello, I am ZentroMart's AI support assistant. According to our Refunds policy policy [REF-2]: Refunds go back to the original payment method.",
+          "expected_decision": "clarify",
+          "passed": true,
+          "must_include_passed": true,
+          "must_not_include_passed": true
+        },
+        {
+          "turn": 2,
+          "customer_message": "Order number hai 1591 1102.",
+          "reply": "To protect your account privacy, please share the last 4 digits of your registered phone number or your delivery pincode.",
+          "expected_decision": "clarify",
+          "passed": true,
+          "must_include_passed": true,
+          "must_not_include_passed": true
+        },
+        {
+          "turn": 3,
+          "customer_message": "Pincode 440010 hai.",
+          "reply": "Thank you for verifying, Fatima. I have found your order 15911102. How may I help you with this order today?",
+          "expected_decision": "answer",
+          "passed": true,
+          "must_include_passed": true,
+          "must_not_include_passed": true
+        },
+        {
+          "turn": 4,
+          "customer_message": "Mujhe ise cancel karna hai.",
+          "reply": "According to our Cancellations policy policy [CAN-4]: Individual items in a multi-item order can be cancelled before they ship.",
+          "expected_decision": "refuse",
+          "passed": false,
+          "must_include_passed": false,
+          "must_not_include_passed": true
+        }
+      ]
+    },
+    {
+      "conversation_id": "PC020",
+      "turns_count": 4,
+      "turns": [
+        {
+          "turn": 1,
+          "customer_message": "Hi, I need some help with an order.",
+          "reply": "Hello, I am ZentroMart's AI support assistant. According to our Frequently asked questions policy [FAQ-2]: Most items can be returned within the return window.",
+          "expected_decision": "clarify",
+          "passed": true,
+          "must_include_passed": true,
+          "must_not_include_passed": true
+        },
+        {
+          "turn": 2,
+          "customer_message": "The order number is 4316 5903.",
+          "reply": "To protect your account privacy, please share the last 4 digits of your registered phone number or your delivery pincode.",
+          "expected_decision": "clarify",
+          "passed": true,
+          "must_include_passed": true,
+          "must_not_include_passed": true
+        },
+        {
+          "turn": 3,
+          "customer_message": "My pincode is 700091.",
+          "reply": "Thank you for verifying, Harsh. I have found your order 43165903. How may I help you with this order today?",
+          "expected_decision": "answer",
+          "passed": true,
+          "must_include_passed": true,
+          "must_not_include_passed": true
+        },
+        {
+          "turn": 4,
+          "customer_message": "I want to cancel it.",
+          "reply": "According to our Frequently asked questions policy [FAQ-4]: Yes.",
+          "expected_decision": "refuse",
+          "passed": false,
+          "must_include_passed": false,
+          "must_not_include_passed": true
+        }
+      ]
+    },
+    {
+      "conversation_id": "PC021",
+      "turns_count": 4,
+      "turns": [
+        {
+          "turn": 1,
+          "customer_message": "\u0928\u092e\u0938\u094d\u0924\u0947, \u092e\u0941\u091d\u0947 \u0905\u092a\u0928\u0947 \u0911\u0930\u094d\u0921\u0930 \u0915\u0947 \u092c\u093e\u0930\u0947 \u092e\u0947\u0902 \u092e\u0926\u0926 \u091a\u093e\u0939\u093f\u090f\u0964",
+          "reply": "Hello, I am ZentroMart's AI support assistant. According to our \u0905\u0915\u094d\u0938\u0930 \u092a\u0942\u091b\u0947 \u091c\u093e\u0928\u0947 \u0935\u093e\u0932\u0947 \u0938\u0935\u093e\u0932 policy [FAQH-1]: \u0939\u093e\u0901, \u0911\u0930\u094d\u0921\u0930 \u0936\u093f\u092a \u0939\u094b\u0928\u0947 \u0938\u0947 \u092a\u0939\u0932\u0947 \u0906\u092a \u0909\u0938\u0947 \u092e\u0941\u092b\u093c\u094d\u0924 \u092e\u0947\u0902 \u0915\u0948\u0902\u0938\u093f\u0932 \u0915\u0930 \u0938\u0915\u0924\u0947 \u0939\u0948\u0902\u0964 \u0936\u093f\u092a \u0939\u094b\u0928\u0947 \u0915\u0947 \u092c\u093e\u0926 \u0911\u0930\u094d\u0921\u0930 \u0915\u0948\u0902\u0938\u093f\u0932 \u0928\u0939\u0940\u0902 \u0939\u094b\u0924\u093e, \u0932\u0947\u0915\u093f\u0928 \u0906\u092a \u0921\u093f\u0932\u0940\u0935\u0930\u0940 \u0915\u0947 \u0938\u092e\u092f \u092a\u093e\u0930\u094d\u0938\u0932 \u0932\u0947\u0928\u0947 \u0938\u0947 \u092e\u0928\u093e \u0915\u0930 \u0938\u0915\u0924\u0947 \u0939\u0948\u0902\u0964.",
+          "expected_decision": "clarify",
+          "passed": true,
+          "must_include_passed": true,
+          "must_not_include_passed": true
+        },
+        {
+          "turn": 2,
+          "customer_message": "\u0911\u0930\u094d\u0921\u0930 \u0928\u0902\u092c\u0930 \u0939\u0948 7746 1439\u0964",
+          "reply": "To protect your account privacy, please share the last 4 digits of your registered phone number or your delivery pincode.",
+          "expected_decision": "clarify",
+          "passed": true,
+          "must_include_passed": true,
+          "must_not_include_passed": true
+        },
+        {
+          "turn": 3,
+          "customer_message": "\u0906\u0916\u093c\u093f\u0930\u0940 \u091a\u093e\u0930 \u0905\u0902\u0915 1266 \u0939\u0948\u0902\u0964",
+          "reply": "That verification detail did not match. Please share the last 4 digits of your registered phone or your delivery pincode once more.",
+          "expected_decision": "clarify",
+          "passed": true,
+          "must_include_passed": true,
+          "must_not_include_passed": true
+        },
+        {
+          "turn": 4,
+          "customer_message": "\u0906\u0916\u093c\u093f\u0930\u0940 \u091a\u093e\u0930 \u0905\u0902\u0915 1266 \u0939\u0948\u0902\u0964",
+          "reply": "Verification details did not match after retry. For account security, order details cannot be shared. Please contact our support team from your registered phone number.",
+          "expected_decision": "refuse",
+          "passed": true,
+          "must_include_passed": true,
+          "must_not_include_passed": true
+        }
+      ]
+    },
+    {
+      "conversation_id": "PC022",
+      "turns_count": 4,
+      "turns": [
+        {
+          "turn": 1,
+          "customer_message": "\u0928\u092e\u0938\u094d\u0924\u0947, \u092e\u0941\u091d\u0947 \u0905\u092a\u0928\u0947 \u0911\u0930\u094d\u0921\u0930 \u0915\u0947 \u092c\u093e\u0930\u0947 \u092e\u0947\u0902 \u092e\u0926\u0926 \u091a\u093e\u0939\u093f\u090f\u0964",
+          "reply": "Hello, I am ZentroMart's AI support assistant. According to our \u0905\u0915\u094d\u0938\u0930 \u092a\u0942\u091b\u0947 \u091c\u093e\u0928\u0947 \u0935\u093e\u0932\u0947 \u0938\u0935\u093e\u0932 policy [FAQH-1]: \u0939\u093e\u0901, \u0911\u0930\u094d\u0921\u0930 \u0936\u093f\u092a \u0939\u094b\u0928\u0947 \u0938\u0947 \u092a\u0939\u0932\u0947 \u0906\u092a \u0909\u0938\u0947 \u092e\u0941\u092b\u093c\u094d\u0924 \u092e\u0947\u0902 \u0915\u0948\u0902\u0938\u093f\u0932 \u0915\u0930 \u0938\u0915\u0924\u0947 \u0939\u0948\u0902\u0964 \u0936\u093f\u092a \u0939\u094b\u0928\u0947 \u0915\u0947 \u092c\u093e\u0926 \u0911\u0930\u094d\u0921\u0930 \u0915\u0948\u0902\u0938\u093f\u0932 \u0928\u0939\u0940\u0902 \u0939\u094b\u0924\u093e, \u0932\u0947\u0915\u093f\u0928 \u0906\u092a \u0921\u093f\u0932\u0940\u0935\u0930\u0940 \u0915\u0947 \u0938\u092e\u092f \u092a\u093e\u0930\u094d\u0938\u0932 \u0932\u0947\u0928\u0947 \u0938\u0947 \u092e\u0928\u093e \u0915\u0930 \u0938\u0915\u0924\u0947 \u0939\u0948\u0902\u0964.",
+          "expected_decision": "clarify",
+          "passed": true,
+          "must_include_passed": true,
+          "must_not_include_passed": true
+        },
+        {
+          "turn": 2,
+          "customer_message": "\u0911\u0930\u094d\u0921\u0930 \u0928\u0902\u092c\u0930 \u0939\u0948 5664 6891\u0964",
+          "reply": "To protect your account privacy, please share the last 4 digits of your registered phone number or your delivery pincode.",
+          "expected_decision": "clarify",
+          "passed": true,
+          "must_include_passed": true,
+          "must_not_include_passed": true
+        },
+        {
+          "turn": 3,
+          "customer_message": "\u0906\u0916\u093c\u093f\u0930\u0940 \u091a\u093e\u0930 \u0905\u0902\u0915 3357 \u0939\u0948\u0902\u0964",
+          "reply": "That verification detail did not match. Please share the last 4 digits of your registered phone or your delivery pincode once more.",
+          "expected_decision": "clarify",
+          "passed": true,
+          "must_include_passed": true,
+          "must_not_include_passed": true
+        },
+        {
+          "turn": 4,
+          "customer_message": "\u0906\u0916\u093c\u093f\u0930\u0940 \u091a\u093e\u0930 \u0905\u0902\u0915 3357 \u0939\u0948\u0902\u0964",
+          "reply": "Verification details did not match after retry. For account security, order details cannot be shared. Please contact our support team from your registered phone number.",
+          "expected_decision": "refuse",
+          "passed": true,
+          "must_include_passed": true,
+          "must_not_include_passed": true
+        }
+      ]
+    },
+    {
+      "conversation_id": "PC023",
+      "turns_count": 4,
+      "turns": [
+        {
+          "turn": 1,
+          "customer_message": "Hi, I need some help with an order.",
+          "reply": "Hello, I am ZentroMart's AI support assistant. According to our Frequently asked questions policy [FAQ-2]: Most items can be returned within the return window.",
+          "expected_decision": "clarify",
+          "passed": true,
+          "must_include_passed": true,
+          "must_not_include_passed": true
+        },
+        {
+          "turn": 2,
+          "customer_message": "The order number is 2235 4022.",
+          "reply": "To protect your account privacy, please share the last 4 digits of your registered phone number or your delivery pincode.",
+          "expected_decision": "clarify",
+          "passed": true,
+          "must_include_passed": true,
+          "must_not_include_passed": true
+        },
+        {
+          "turn": 3,
+          "customer_message": "The last four digits are 9967.",
+          "reply": "Thank you for verifying, Abhishek. I have found your order 22354022. How may I help you with this order today?",
+          "expected_decision": "answer",
+          "passed": true,
+          "must_include_passed": true,
+          "must_not_include_passed": true
+        },
+        {
+          "turn": 4,
+          "customer_message": "My express delivery was late. Do I get the fee back?",
+          "reply": "If an express order arrives late, we refund the \u20b979 express delivery fee back to your ZentroMart Wallet [DEL-4].",
+          "expected_decision": "answer",
+          "passed": true,
+          "must_include_passed": true,
+          "must_not_include_passed": true
+        }
+      ]
+    },
+    {
+      "conversation_id": "PC024",
+      "turns_count": 4,
+      "turns": [
+        {
+          "turn": 1,
+          "customer_message": "Hi, I need some help with an order.",
+          "reply": "Hello, I am ZentroMart's AI support assistant. According to our Frequently asked questions policy [FAQ-2]: Most items can be returned within the return window.",
+          "expected_decision": "clarify",
+          "passed": true,
+          "must_include_passed": true,
+          "must_not_include_passed": true
+        },
+        {
+          "turn": 2,
+          "customer_message": "The order number is 5863 4590.",
+          "reply": "To protect your account privacy, please share the last 4 digits of your registered phone number or your delivery pincode.",
+          "expected_decision": "clarify",
+          "passed": true,
+          "must_include_passed": true,
+          "must_not_include_passed": true
+        },
+        {
+          "turn": 3,
+          "customer_message": "The last four digits are 8781.",
+          "reply": "Thank you for verifying, Gaurav. I have found your order 58634590. How may I help you with this order today?",
+          "expected_decision": "answer",
+          "passed": true,
+          "must_include_passed": true,
+          "must_not_include_passed": true
+        },
+        {
+          "turn": 4,
+          "customer_message": "My express delivery was late. Do I get the fee back?",
+          "reply": "If an express order arrives late, we refund the \u20b979 express delivery fee back to your ZentroMart Wallet [DEL-4].",
+          "expected_decision": "answer",
+          "passed": true,
+          "must_include_passed": true,
+          "must_not_include_passed": true
+        }
+      ]
+    }
+  ]
+}

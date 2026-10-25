@@ -1,0 +1,19 @@
+{
+  "step1_baseline": {
+    "decision_accuracy_pct": 90.38,
+    "must_include_accuracy_pct": 7.69,
+    "evidence_recall_pct": 0.0
+  },
+  "step2_rag": {
+    "decision_accuracy_pct": 100.0,
+    "must_include_accuracy_pct": 86.54,
+    "must_not_include_accuracy_pct": 100.0,
+    "evidence_recall_pct": 65.96
+  },
+  "step3_conversations": {
+    "total_conversations": 23,
+    "total_turns": 96,
+    "turn_accuracy_pct": 80.21,
+    "tool_call_accuracy_pct": 100.0
+  }
+}

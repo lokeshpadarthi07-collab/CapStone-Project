@@ -1,0 +1,1069 @@
+{
+  "total_questions": 52,
+  "correct_decisions": 52,
+  "decision_accuracy_pct": 100.0,
+  "must_include_accuracy_pct": 86.54,
+  "must_not_include_accuracy_pct": 100.0,
+  "evidence_recall_pct": 65.96,
+  "cases": [
+    {
+      "id": "PQ0002",
+      "question": "SKU ELE-0012 pe ZentroMart Assured hai kya? Claim kaise karein?",
+      "reply": "Hello, I am ZentroMart's AI support assistant. Haan, ispe ZentroMart Assured warranty hai; 12 mahine ki warranty hai jise aap My Orders app se claim kar sakte hain [WAR-2].",
+      "decision_passed": true,
+      "must_include_passed": true,
+      "must_not_include_passed": true,
+      "retrieved_evidence": [
+        "products.csv:ELE-0012",
+        "WAR-1",
+        "WAR-2",
+        "WAR-3",
+        "MKS-3",
+        "DWM-4",
+        "PAY-4"
+      ],
+      "gold_evidence": [
+        "WAR-2",
+        "products.csv:ELE-0012"
+      ],
+      "evidence_hit": true
+    },
+    {
+      "id": "PQ0003",
+      "question": "How fast are refunds to the ZentroMart Wallet?",
+      "reply": "Hello, I am ZentroMart's AI support assistant. Refunds to the ZentroMart Wallet are instant, credited within 2 hours of initiation [REF-2].",
+      "decision_passed": true,
+      "must_include_passed": true,
+      "must_not_include_passed": true,
+      "retrieved_evidence": [
+        "REF-2",
+        "PAY-4",
+        "REF-3",
+        "REF-1",
+        "FAQ-1",
+        "REF-4"
+      ],
+      "gold_evidence": [
+        "REF-2",
+        "KB-00.1"
+      ],
+      "evidence_hit": true
+    },
+    {
+      "id": "PQ0004",
+      "question": "Can I schedule a delivery at midnight?",
+      "reply": "Hello, I am ZentroMart's AI support assistant. Sorry, I don't have information about that. I can connect you to a colleague who can help.",
+      "decision_passed": true,
+      "must_include_passed": true,
+      "must_not_include_passed": true,
+      "retrieved_evidence": [
+        "CAN-4",
+        "CAN-2",
+        "DEL-4",
+        "FAQ-4",
+        "CAN-1",
+        "REF-1"
+      ],
+      "gold_evidence": [],
+      "evidence_hit": false
+    },
+    {
+      "id": "PQ0005",
+      "question": "SKU ELE-0002 pe ZentroMart Assured hai kya? Claim kaise karein?",
+      "reply": "Hello, I am ZentroMart's AI support assistant. Haan, ispe ZentroMart Assured warranty hai; 12 mahine ki warranty hai jise aap My Orders app se claim kar sakte hain [WAR-2].",
+      "decision_passed": true,
+      "must_include_passed": true,
+      "must_not_include_passed": true,
+      "retrieved_evidence": [
+        "products.csv:ELE-0002",
+        "WAR-1",
+        "WAR-2",
+        "WAR-3",
+        "MKS-3",
+        "DWM-4",
+        "PAY-4"
+      ],
+      "gold_evidence": [
+        "WAR-2",
+        "products.csv:ELE-0002"
+      ],
+      "evidence_hit": true
+    },
+    {
+      "id": "PQ0006",
+      "question": "As a ZentroMart Plus member, will I be charged the pickup fee for returning shoes I just don't like?",
+      "reply": "Hello, I am ZentroMart's AI support assistant. No, as a ZentroMart Plus member, reverse pickup fee is waived and completely free [RET-6].",
+      "decision_passed": true,
+      "must_include_passed": true,
+      "must_not_include_passed": true,
+      "retrieved_evidence": [
+        "RET-6",
+        "PLS-3",
+        "PLS-2",
+        "FAQ-2",
+        "PLS-1",
+        "RET-7"
+      ],
+      "gold_evidence": [
+        "RET-6",
+        "PLS-2"
+      ],
+      "evidence_hit": true
+    },
+    {
+      "id": "PQ0008",
+      "question": "credit card wala refund 17 October 2026 ko shuru hua, kab tak aa jaana chahiye?",
+      "reply": "Hello, I am ZentroMart's AI support assistant. Credit card refund 5 se 7 business days leta hai, jo 27 October 2026 tak aa jaana chahiye [REF-1].",
+      "decision_passed": true,
+      "must_include_passed": true,
+      "must_not_include_passed": true,
+      "retrieved_evidence": [
+        "DEL-4",
+        "REF-2",
+        "PAY-4",
+        "PAY-1",
+        "REF-1",
+        "REF-4"
+      ],
+      "gold_evidence": [
+        "REF-2",
+        "KB-00.3"
+      ],
+      "evidence_hit": true
+    },
+    {
+      "id": "PQ0009",
+      "question": "Is there a student discount?",
+      "reply": "Hello, I am ZentroMart's AI support assistant. Sorry, I don't have information about that. I can connect you to a colleague who can help.",
+      "decision_passed": true,
+      "must_include_passed": true,
+      "must_not_include_passed": true,
+      "retrieved_evidence": [
+        "PAY-4",
+        "REF-1",
+        "DWM-4",
+        "IDV-1",
+        "CAN-2",
+        "DEL-3"
+      ],
+      "gold_evidence": [],
+      "evidence_hit": false
+    },
+    {
+      "id": "PQ0010",
+      "question": "Is the collection free if the UrbanThread Slim Fit Jeans came torn?",
+      "reply": "Hello, I am ZentroMart's AI support assistant. Clothing, footwear and bags have a return window of 15 days from delivery [RET-2].",
+      "decision_passed": true,
+      "must_include_passed": false,
+      "must_not_include_passed": true,
+      "retrieved_evidence": [
+        "DWM-4",
+        "DWM-1",
+        "DWM-2",
+        "DWM-5",
+        "FAQ-3",
+        "ESC-1"
+      ],
+      "gold_evidence": [
+        "RET-6",
+        "DWM-2"
+      ],
+      "evidence_hit": true
+    },
+    {
+      "id": "PQ0013",
+      "question": "\u092e\u0948\u0902\u0928\u0947 Gulmohar Matte Lipstick \u0916\u094b\u0932 \u0932\u093f\u092f\u093e \u0939\u0948, \u0915\u094d\u092f\u093e \u0905\u092c \u092d\u0940 \u0935\u093e\u092a\u0938 \u0915\u0930 \u0938\u0915\u0924\u0940 \u0939\u0942\u0901?",
+      "reply": "Hello, I am ZentroMart's AI support assistant. According to our \u0905\u0915\u094d\u0938\u0930 \u092a\u0942\u091b\u0947 \u091c\u093e\u0928\u0947 \u0935\u093e\u0932\u0947 \u0938\u0935\u093e\u0932 policy [FAQH-1]: \u0939\u093e\u0901, \u0911\u0930\u094d\u0921\u0930 \u0936\u093f\u092a \u0939\u094b\u0928\u0947 \u0938\u0947 \u092a\u0939\u0932\u0947 \u0906\u092a \u0909\u0938\u0947 \u092e\u0941\u092b\u093c\u094d\u0924 \u092e\u0947\u0902 \u0915\u0948\u0902\u0938\u093f\u0932 \u0915\u0930 \u0938\u0915\u0924\u0947 \u0939\u0948\u0902\u0964 \u0936\u093f\u092a \u0939\u094b\u0928\u0947 \u0915\u0947 \u092c\u093e\u0926 \u0911\u0930\u094d\u0921\u0930 \u0915\u0948\u0902\u0938\u093f\u0932 \u0928\u0939\u0940\u0902 \u0939\u094b\u0924\u093e, \u0932\u0947\u0915\u093f\u0928 \u0906\u092a \u0921\u093f\u0932\u0940\u0935\u0930\u0940 \u0915\u0947 \u0938\u092e\u092f \u092a\u093e\u0930\u094d\u0938\u0932 \u0932\u0947\u0928\u0947 \u0938\u0947 \u092e\u0928\u093e \u0915\u0930 \u0938\u0915\u0924\u0947 \u0939\u0948\u0902\u0964.",
+      "decision_passed": true,
+      "must_include_passed": false,
+      "must_not_include_passed": true,
+      "retrieved_evidence": [
+        "FAQH-1",
+        "FAQH-4",
+        "RET-2",
+        "RET-4",
+        "RET-6",
+        "RVP-1"
+      ],
+      "gold_evidence": [
+        "RET-4"
+      ],
+      "evidence_hit": true
+    },
+    {
+      "id": "PQ0014",
+      "question": "\u092e\u0941\u091d\u0947 Pagecraft A5 Ruled Notebook (Pack of 4) \u0932\u094c\u091f\u093e\u0928\u0947 \u0915\u0947 \u0932\u093f\u090f \u0915\u093f\u0924\u0928\u0947 \u0926\u093f\u0928 \u092e\u093f\u0932\u0947\u0902\u0917\u0947?",
+      "reply": "Hello, I am ZentroMart's AI support assistant. Pagecraft notebooks aur stationery items ka return window delivery ke baad 10 din ka hota hai [RET-2].",
+      "decision_passed": true,
+      "must_include_passed": true,
+      "must_not_include_passed": true,
+      "retrieved_evidence": [
+        "RET-4",
+        "FAQH-2",
+        "CPN-2",
+        "ESC-1",
+        "IDV-2",
+        "KB-00.1"
+      ],
+      "gold_evidence": [
+        "RET-2",
+        "products.csv:BKS-0056"
+      ],
+      "evidence_hit": false
+    },
+    {
+      "id": "PQ0015",
+      "question": "Bulk order pe GST invoice milega kya?",
+      "reply": "Hello, I am ZentroMart's AI support assistant. Maaf kijiye, mere paas is baare mein jankari nahi hai. Main aapko hamare sahyogi se connect kar sakta hoon jo madad karenge.",
+      "decision_passed": true,
+      "must_include_passed": true,
+      "must_not_include_passed": true,
+      "retrieved_evidence": [
+        "REF-2",
+        "PAY-4",
+        "ESC-1",
+        "PAY-1",
+        "REF-1",
+        "REF-4"
+      ],
+      "gold_evidence": [],
+      "evidence_hit": false
+    },
+    {
+      "id": "PQ0016",
+      "question": "I opened the Neelam Eau de Parfum 50 ml and tried it once. Can I still return it?",
+      "reply": "Hello, I am ZentroMart's AI support assistant. Nahi, beauty aur perfume products sirf unopened aur original seal intact hone par hi return ho sakte hain [RET-4].",
+      "decision_passed": true,
+      "must_include_passed": true,
+      "must_not_include_passed": true,
+      "retrieved_evidence": [
+        "RET-6",
+        "FAQ-2",
+        "RVP-3",
+        "CAN-1",
+        "RVP-2",
+        "RVP-1"
+      ],
+      "gold_evidence": [
+        "RET-4",
+        "RET-2"
+      ],
+      "evidence_hit": false
+    },
+    {
+      "id": "PQ0018",
+      "question": "\u0915\u093f\u0924\u0928\u0947 \u0926\u093f\u0928 \u092e\u0947\u0902 \u0935\u093e\u092a\u0938 \u0915\u0930\u0928\u093e \u0939\u094b\u0917\u093e?",
+      "reply": "Hello, I am ZentroMart's AI support assistant. According to our Returns policy policy [RET-6]: Returns are collected from the delivery address through reverse pickup.",
+      "decision_passed": true,
+      "must_include_passed": true,
+      "must_not_include_passed": true,
+      "retrieved_evidence": [
+        "RET-6",
+        "RVP-1",
+        "RVP-2",
+        "MKS-2",
+        "RVP-3",
+        "RET-7"
+      ],
+      "gold_evidence": [
+        "RET-2"
+      ],
+      "evidence_hit": false
+    },
+    {
+      "id": "PQ0019",
+      "question": "My Orbix Fit 3 Pro Smartwatch was delivered on 20 July. What was the return window for it?",
+      "reply": "Hello, I am ZentroMart's AI support assistant. Electronics delivered before 1 August 2026 had a return window of 10 days from delivery [RET-3].",
+      "decision_passed": true,
+      "must_include_passed": true,
+      "must_not_include_passed": true,
+      "retrieved_evidence": [
+        "RET-6",
+        "RVP-1",
+        "DEL-4",
+        "RET-2",
+        "RVP-3",
+        "RET-3"
+      ],
+      "gold_evidence": [
+        "RET-3",
+        "RETv3-2"
+      ],
+      "evidence_hit": true
+    },
+    {
+      "id": "PQ0020",
+      "question": "\u092e\u0941\u091d\u0947 Sootra Canvas Tote Bag \u0932\u094c\u091f\u093e\u0928\u0947 \u0915\u0947 \u0932\u093f\u090f \u0915\u093f\u0924\u0928\u0947 \u0926\u093f\u0928 \u092e\u093f\u0932\u0947\u0902\u0917\u0947?",
+      "reply": "Hello, I am ZentroMart's AI support assistant. Clothing, footwear and bags have a return window of 15 days from delivery [RET-2].",
+      "decision_passed": true,
+      "must_include_passed": true,
+      "must_not_include_passed": true,
+      "retrieved_evidence": [
+        "CAN-4",
+        "CAN-1",
+        "PLS-3",
+        "CAN-2",
+        "CAN-3",
+        "FAQH-2"
+      ],
+      "gold_evidence": [
+        "RET-2",
+        "RET-8",
+        "products.csv:FSH-0038"
+      ],
+      "evidence_hit": false
+    },
+    {
+      "id": "PQ0021",
+      "question": "What happens if I'm not home when the courier comes?",
+      "reply": "Hello, I am ZentroMart's AI support assistant. If you are not home, the courier will re-attempt delivery up to 3 times before returning the package to the warehouse [DEL-3].",
+      "decision_passed": true,
+      "must_include_passed": true,
+      "must_not_include_passed": true,
+      "retrieved_evidence": [
+        "WAR-3",
+        "REF-1",
+        "FAQ-2",
+        "FAQ-4",
+        "ESC-1",
+        "ESC-2"
+      ],
+      "gold_evidence": [
+        "DEL-3"
+      ],
+      "evidence_hit": false
+    },
+    {
+      "id": "PQ0022",
+      "question": "My refund to credit card was started on 17 October 2026. By which date should I have it?",
+      "reply": "Hello, I am ZentroMart's AI support assistant. Credit card refunds take 5 to 7 business days, so you should have it by 27 October 2026 [REF-1].",
+      "decision_passed": true,
+      "must_include_passed": true,
+      "must_not_include_passed": true,
+      "retrieved_evidence": [
+        "REF-2",
+        "PAY-4",
+        "ESC-1",
+        "KB-00.2",
+        "PAY-1",
+        "REF-4"
+      ],
+      "gold_evidence": [
+        "REF-2",
+        "KB-00.3"
+      ],
+      "evidence_hit": true
+    },
+    {
+      "id": "PQ0023",
+      "question": "There's an order on my account that I never placed.",
+      "reply": "Hello, I am ZentroMart's AI support assistant. For your account security, I am creating a ticket and connecting you to our support team immediately to investigate this order [SEC-2].",
+      "decision_passed": true,
+      "must_include_passed": true,
+      "must_not_include_passed": true,
+      "retrieved_evidence": [
+        "REF-4",
+        "PAY-4",
+        "ESC-4",
+        "REF-2",
+        "DEL-4",
+        "ESC-1"
+      ],
+      "gold_evidence": [
+        "ESC-1"
+      ],
+      "evidence_hit": true
+    },
+    {
+      "id": "PQ0024",
+      "question": "How long do I get to send back the Rangoli Cotton Straight Kurta?",
+      "reply": "Hello, I am ZentroMart's AI support assistant. Clothing, footwear and bags have a return window of 15 days from delivery [RET-2].",
+      "decision_passed": true,
+      "must_include_passed": true,
+      "must_not_include_passed": true,
+      "retrieved_evidence": [
+        "FAQ-1",
+        "REF-2",
+        "IDV-2",
+        "FAQ-4",
+        "ESC-2",
+        "FAQ-2"
+      ],
+      "gold_evidence": [
+        "RET-2",
+        "RET-8",
+        "products.csv:FSH-0026"
+      ],
+      "evidence_hit": false
+    },
+    {
+      "id": "PQ0025",
+      "question": "If I paid with net banking, how soon will the refund show up?",
+      "reply": "Hello, I am ZentroMart's AI support assistant. Refunds via net banking take 3 to 5 business days to appear in your bank account [REF-1].",
+      "decision_passed": true,
+      "must_include_passed": false,
+      "must_not_include_passed": true,
+      "retrieved_evidence": [
+        "REF-2",
+        "PAY-1",
+        "RVP-3",
+        "REF-4",
+        "PAY-4",
+        "DEL-4"
+      ],
+      "gold_evidence": [
+        "REF-2",
+        "KB-00.1"
+      ],
+      "evidence_hit": true
+    },
+    {
+      "id": "PQ0026",
+      "question": "What warranty comes with the Voltra PowerCell 10000 mAh Power Bank, Green (SKU ELE-0008)?",
+      "reply": "Hello, I am ZentroMart's AI support assistant. Yes, this product comes with 6 months of warranty; you can claim it from My Orders in the app [WAR-2].",
+      "decision_passed": true,
+      "must_include_passed": false,
+      "must_not_include_passed": true,
+      "retrieved_evidence": [
+        "products.csv:ELE-0008",
+        "WAR-1",
+        "WAR-3",
+        "WAR-2",
+        "TRB-4",
+        "MKS-3",
+        "ESC-2"
+      ],
+      "gold_evidence": [
+        "WAR-1",
+        "WAR-2",
+        "products.csv:ELE-0008"
+      ],
+      "evidence_hit": true
+    },
+    {
+      "id": "PQ0027",
+      "question": "UPI wala refund 12 October 2026 ko shuru hua, kab tak aa jaana chahiye?",
+      "reply": "Hello, I am ZentroMart's AI support assistant. UPI refund 1 se 3 business days leta hai, jo 15 October 2026 tak aa jaana chahiye [REF-1].",
+      "decision_passed": true,
+      "must_include_passed": true,
+      "must_not_include_passed": true,
+      "retrieved_evidence": [
+        "DEL-4",
+        "REF-2",
+        "PAY-4",
+        "PAY-1",
+        "REF-1",
+        "REF-4"
+      ],
+      "gold_evidence": [
+        "REF-2",
+        "KB-00.3"
+      ],
+      "evidence_hit": true
+    },
+    {
+      "id": "PQ0028",
+      "question": "My refund to net banking was started on 14 October 2026. By which date should I have it?",
+      "reply": "Hello, I am ZentroMart's AI support assistant. Net banking refunds take 3 to 5 business days, so you should have it by 21 October 2026 [REF-1].",
+      "decision_passed": true,
+      "must_include_passed": true,
+      "must_not_include_passed": true,
+      "retrieved_evidence": [
+        "REF-2",
+        "PAY-4",
+        "PAY-1",
+        "ESC-1",
+        "KB-00.2",
+        "REF-4"
+      ],
+      "gold_evidence": [
+        "REF-2",
+        "KB-00.3"
+      ],
+      "evidence_hit": true
+    },
+    {
+      "id": "PQ0029",
+      "question": "credit card wala refund 12 October 2026 ko shuru hua, kab tak aa jaana chahiye?",
+      "reply": "Hello, I am ZentroMart's AI support assistant. Credit card refund 5 se 7 business days leta hai, jo 21 October 2026 tak aa jaana chahiye [REF-1].",
+      "decision_passed": true,
+      "must_include_passed": true,
+      "must_not_include_passed": true,
+      "retrieved_evidence": [
+        "DEL-4",
+        "REF-2",
+        "PAY-4",
+        "PAY-1",
+        "REF-1",
+        "REF-4"
+      ],
+      "gold_evidence": [
+        "REF-2",
+        "KB-00.3"
+      ],
+      "evidence_hit": true
+    },
+    {
+      "id": "PQ0030",
+      "question": "The Kestrel Book 14 Laptop (SKU ELE-0023) I received yesterday has a crack. I want it sorted.",
+      "reply": "Hello, I am ZentroMart's AI support assistant. Because this involves a high-value laptop with physical damage, I am creating a support ticket and connecting you to our Priority Resolution team right away [ESC-1].",
+      "decision_passed": true,
+      "must_include_passed": true,
+      "must_not_include_passed": true,
+      "retrieved_evidence": [
+        "products.csv:ELE-0023",
+        "TRK-2",
+        "FAQ-4",
+        "PLS-3",
+        "DWM-5",
+        "FAQ-2",
+        "RVP-3"
+      ],
+      "gold_evidence": [
+        "DWM-3",
+        "ESC-1",
+        "products.csv:ELE-0023"
+      ],
+      "evidence_hit": true
+    },
+    {
+      "id": "PQ0031",
+      "question": "My Bluetooth speaker won't turn on at all.",
+      "reply": "Hello, I am ZentroMart's AI support assistant. If your speaker is defective, you have a 7-day return window from delivery or a 30-day replacement warranty [WAR-1].",
+      "decision_passed": true,
+      "must_include_passed": false,
+      "must_not_include_passed": true,
+      "retrieved_evidence": [
+        "TRB-4",
+        "REF-1",
+        "TRB-3",
+        "TRK-1",
+        "STY-5",
+        "PAY-2"
+      ],
+      "gold_evidence": [
+        "TRB-4"
+      ],
+      "evidence_hit": true
+    },
+    {
+      "id": "PQ0032",
+      "question": "SKU ELE-0003 pe ZentroMart Assured hai kya? Claim kaise karein?",
+      "reply": "Hello, I am ZentroMart's AI support assistant. Haan, ispe ZentroMart Assured warranty hai; 12 mahine ki warranty hai jise aap My Orders app se claim kar sakte hain [WAR-2].",
+      "decision_passed": true,
+      "must_include_passed": true,
+      "must_not_include_passed": true,
+      "retrieved_evidence": [
+        "products.csv:ELE-0003",
+        "WAR-1",
+        "WAR-2",
+        "WAR-3",
+        "MKS-3",
+        "DWM-4",
+        "PAY-4"
+      ],
+      "gold_evidence": [
+        "WAR-2",
+        "products.csv:ELE-0003"
+      ],
+      "evidence_hit": true
+    },
+    {
+      "id": "PQ0033",
+      "question": "My refund to net banking was started on 17 October 2026. By which date should I have it?",
+      "reply": "Hello, I am ZentroMart's AI support assistant. Net banking refunds take 3 to 5 business days, so you should have it by 24 October 2026 [REF-1].",
+      "decision_passed": true,
+      "must_include_passed": true,
+      "must_not_include_passed": true,
+      "retrieved_evidence": [
+        "REF-2",
+        "PAY-4",
+        "PAY-1",
+        "ESC-1",
+        "KB-00.2",
+        "REF-4"
+      ],
+      "gold_evidence": [
+        "REF-2",
+        "KB-00.3"
+      ],
+      "evidence_hit": true
+    },
+    {
+      "id": "PQ0034",
+      "question": "Can you deliver to Dubai?",
+      "reply": "Hello, I am ZentroMart's AI support assistant. ZentroMart delivers only within India; international shipping is not available [DEL-5].",
+      "decision_passed": true,
+      "must_include_passed": true,
+      "must_not_include_passed": true,
+      "retrieved_evidence": [
+        "DEL-4",
+        "CAN-1",
+        "DEL-5",
+        "CAN-4",
+        "FAQ-5",
+        "CAN-3"
+      ],
+      "gold_evidence": [
+        "DEL-5",
+        "FAQ-5"
+      ],
+      "evidence_hit": true
+    },
+    {
+      "id": "PQ0035",
+      "question": "net banking wala refund 12 October 2026 ko shuru hua, kab tak aa jaana chahiye?",
+      "reply": "Hello, I am ZentroMart's AI support assistant. Net banking refund 3 se 5 business days leta hai, jo 17 October 2026 tak aa jaana chahiye [REF-1].",
+      "decision_passed": true,
+      "must_include_passed": true,
+      "must_not_include_passed": true,
+      "retrieved_evidence": [
+        "REF-2",
+        "DEL-4",
+        "PAY-1",
+        "PAY-4",
+        "REF-1",
+        "REF-4"
+      ],
+      "gold_evidence": [
+        "REF-2",
+        "KB-00.3"
+      ],
+      "evidence_hit": true
+    },
+    {
+      "id": "PQ0036",
+      "question": "The Comfi One-piece Swimsuit doesn't fit. Can I send it back?",
+      "reply": "Hello, I am ZentroMart's AI support assistant. For hygiene reasons, innerwear and swimwear cannot be returned and are non-returnable [RET-5].",
+      "decision_passed": true,
+      "must_include_passed": true,
+      "must_not_include_passed": true,
+      "retrieved_evidence": [
+        "CAN-1",
+        "CAN-4",
+        "FAQ-2",
+        "FAQ-4",
+        "CAN-2",
+        "RVP-3"
+      ],
+      "gold_evidence": [
+        "RET-2",
+        "RET-5",
+        "products.csv:INR-0068"
+      ],
+      "evidence_hit": false
+    },
+    {
+      "id": "PQ0037",
+      "question": "\u0915\u094d\u092f\u093e \u0906\u092a\u0915\u0940 \u0915\u094b\u0908 \u0926\u0941\u0915\u093e\u0928 \u0915\u094b\u091a\u094d\u091a\u093f \u092e\u0947\u0902 \u0939\u0948?",
+      "reply": "Hello, I am ZentroMart's AI support assistant. Maaf kijiye, mere paas is baare mein jankari nahi hai. Main aapko hamare sahyogi se connect kar sakta hoon jo madad karenge.",
+      "decision_passed": true,
+      "must_include_passed": true,
+      "must_not_include_passed": true,
+      "retrieved_evidence": [
+        "FAQH-4",
+        "FAQH-1",
+        "FAQH-3",
+        "FAQH-2"
+      ],
+      "gold_evidence": [],
+      "evidence_hit": false
+    },
+    {
+      "id": "PQ0039",
+      "question": "The Comfi Cotton Briefs (Pack of 3) doesn't fit. Can I send it back?",
+      "reply": "Hello, I am ZentroMart's AI support assistant. For hygiene reasons, innerwear and swimwear cannot be returned and are non-returnable [RET-5].",
+      "decision_passed": true,
+      "must_include_passed": true,
+      "must_not_include_passed": true,
+      "retrieved_evidence": [
+        "CAN-1",
+        "CAN-4",
+        "FAQ-2",
+        "FAQ-4",
+        "REF-1",
+        "CAN-2"
+      ],
+      "gold_evidence": [
+        "RET-2",
+        "RET-5",
+        "products.csv:INR-0065"
+      ],
+      "evidence_hit": false
+    },
+    {
+      "id": "PQ0040",
+      "question": "\u0911\u0930\u094d\u0921\u0930 \u0936\u093f\u092a \u0939\u094b \u0917\u092f\u093e \u0939\u0948, \u0915\u094d\u092f\u093e \u0905\u092c \u0915\u0948\u0902\u0938\u093f\u0932 \u0939\u094b \u0938\u0915\u0924\u093e \u0939\u0948?",
+      "reply": "Hello, I am ZentroMart's AI support assistant. According to our \u0905\u0915\u094d\u0938\u0930 \u092a\u0942\u091b\u0947 \u091c\u093e\u0928\u0947 \u0935\u093e\u0932\u0947 \u0938\u0935\u093e\u0932 policy [FAQH-1]: \u0939\u093e\u0901, \u0911\u0930\u094d\u0921\u0930 \u0936\u093f\u092a \u0939\u094b\u0928\u0947 \u0938\u0947 \u092a\u0939\u0932\u0947 \u0906\u092a \u0909\u0938\u0947 \u092e\u0941\u092b\u093c\u094d\u0924 \u092e\u0947\u0902 \u0915\u0948\u0902\u0938\u093f\u0932 \u0915\u0930 \u0938\u0915\u0924\u0947 \u0939\u0948\u0902\u0964 \u0936\u093f\u092a \u0939\u094b\u0928\u0947 \u0915\u0947 \u092c\u093e\u0926 \u0911\u0930\u094d\u0921\u0930 \u0915\u0948\u0902\u0938\u093f\u0932 \u0928\u0939\u0940\u0902 \u0939\u094b\u0924\u093e, \u0932\u0947\u0915\u093f\u0928 \u0906\u092a \u0921\u093f\u0932\u0940\u0935\u0930\u0940 \u0915\u0947 \u0938\u092e\u092f \u092a\u093e\u0930\u094d\u0938\u0932 \u0932\u0947\u0928\u0947 \u0938\u0947 \u092e\u0928\u093e \u0915\u0930 \u0938\u0915\u0924\u0947 \u0939\u0948\u0902\u0964.",
+      "decision_passed": true,
+      "must_include_passed": true,
+      "must_not_include_passed": true,
+      "retrieved_evidence": [
+        "FAQH-1",
+        "FAQH-4",
+        "FAQH-3"
+      ],
+      "gold_evidence": [
+        "FAQH-1",
+        "CAN-2"
+      ],
+      "evidence_hit": true
+    },
+    {
+      "id": "PQ0041",
+      "question": "What warranty comes with the Nimbus X2 Pro Wireless Earbuds, Blue (SKU ELE-0003)?",
+      "reply": "Hello, I am ZentroMart's AI support assistant. Yes, this product comes with 12 months of warranty; you can claim it from My Orders in the app [WAR-2].",
+      "decision_passed": true,
+      "must_include_passed": true,
+      "must_not_include_passed": true,
+      "retrieved_evidence": [
+        "products.csv:ELE-0003",
+        "WAR-1",
+        "WAR-3",
+        "TRB-1",
+        "WAR-2",
+        "MKS-3",
+        "ESC-2"
+      ],
+      "gold_evidence": [
+        "WAR-1",
+        "WAR-2",
+        "products.csv:ELE-0003"
+      ],
+      "evidence_hit": true
+    },
+    {
+      "id": "PQ0042",
+      "question": "My order is already on its way. Can I still stop it?",
+      "reply": "Hello, I am ZentroMart's AI support assistant. Orders already shipped cannot be cancelled in the app; please refuse delivery when the courier arrives [CAN-1].",
+      "decision_passed": true,
+      "must_include_passed": true,
+      "must_not_include_passed": true,
+      "retrieved_evidence": [
+        "CAN-1",
+        "PAY-4",
+        "REF-2",
+        "CAN-4",
+        "REF-4",
+        "REF-1"
+      ],
+      "gold_evidence": [
+        "CAN-2"
+      ],
+      "evidence_hit": false
+    },
+    {
+      "id": "PQ0044",
+      "question": "\u092e\u0941\u091d\u0947 Aangan Cotton Double Bedsheet Set \u0932\u094c\u091f\u093e\u0928\u0947 \u0915\u0947 \u0932\u093f\u090f \u0915\u093f\u0924\u0928\u0947 \u0926\u093f\u0928 \u092e\u093f\u0932\u0947\u0902\u0917\u0947?",
+      "reply": "Hello, I am ZentroMart's AI support assistant. Home and kitchen items like bedsheet sets have a return window of 10 days from delivery [RET-2].",
+      "decision_passed": true,
+      "must_include_passed": true,
+      "must_not_include_passed": true,
+      "retrieved_evidence": [
+        "FAQH-2",
+        "FAQH-1",
+        "FAQH-3",
+        "FAQH-4"
+      ],
+      "gold_evidence": [
+        "RET-2",
+        "products.csv:HOM-0046"
+      ],
+      "evidence_hit": false
+    },
+    {
+      "id": "PQ0045",
+      "question": "How long does a refund to UPI take?",
+      "reply": "Hello, I am ZentroMart's AI support assistant. Refunds to UPI take 1 to 3 business days to reflect in your account [REF-1].",
+      "decision_passed": true,
+      "must_include_passed": false,
+      "must_not_include_passed": true,
+      "retrieved_evidence": [
+        "REF-2",
+        "FAQ-1",
+        "PAY-4",
+        "ESC-1",
+        "REF-3",
+        "REF-1"
+      ],
+      "gold_evidence": [
+        "REF-2",
+        "KB-00.1"
+      ],
+      "evidence_hit": true
+    },
+    {
+      "id": "PQ0046",
+      "question": "The Kestrel Book 14 Laptop (SKU ELE-0022) I received yesterday has a crack. I want it sorted.",
+      "reply": "Hello, I am ZentroMart's AI support assistant. Because this involves a high-value laptop with physical damage, I am creating a support ticket and connecting you to our Priority Resolution team right away [ESC-1].",
+      "decision_passed": true,
+      "must_include_passed": true,
+      "must_not_include_passed": true,
+      "retrieved_evidence": [
+        "products.csv:ELE-0022",
+        "TRK-2",
+        "FAQ-4",
+        "PLS-3",
+        "DWM-5",
+        "FAQ-2",
+        "RVP-3"
+      ],
+      "gold_evidence": [
+        "DWM-3",
+        "ESC-1",
+        "products.csv:ELE-0022"
+      ],
+      "evidence_hit": true
+    },
+    {
+      "id": "PQ0047",
+      "question": "My express order arrived a day late. Do I get anything back?",
+      "reply": "Hello, I am ZentroMart's AI support assistant. If an express order arrives late, we refund the \u20b979 express delivery fee back to your ZentroMart Wallet [DEL-4].",
+      "decision_passed": true,
+      "must_include_passed": true,
+      "must_not_include_passed": true,
+      "retrieved_evidence": [
+        "DEL-4",
+        "REF-2",
+        "PAY-4",
+        "DEL-1",
+        "CAN-2",
+        "ESC-1"
+      ],
+      "gold_evidence": [
+        "DEL-4"
+      ],
+      "evidence_hit": true
+    },
+    {
+      "id": "PQ0048",
+      "question": "\u092e\u0947\u0930\u093e \u0938\u093e\u092e\u093e\u0928 \u091f\u0942\u091f\u093e \u0939\u0941\u0906 \u0906\u092f\u093e \u0939\u0948, \u0905\u092c \u0915\u094d\u092f\u093e \u0915\u0930\u0942\u0901?",
+      "reply": "Hello, I am ZentroMart's AI support assistant. According to our \u0905\u0915\u094d\u0938\u0930 \u092a\u0942\u091b\u0947 \u091c\u093e\u0928\u0947 \u0935\u093e\u0932\u0947 \u0938\u0935\u093e\u0932 policy [FAQH-3]: \u0921\u093f\u0932\u0940\u0935\u0930\u0940 \u0915\u0947 48 \u0918\u0902\u091f\u0947 \u0915\u0947 \u0905\u0902\u0926\u0930 \u0938\u093e\u092e\u093e\u0928 \u0914\u0930 \u092a\u0948\u0915\u0947\u091f \u0915\u0940 \u092b\u093c\u094b\u091f\u094b \u0915\u0947 \u0938\u093e\u0925 \u0936\u093f\u0915\u093e\u092f\u0924 \u0915\u0930\u0947\u0902\u0964 \u091c\u093e\u0901\u091a \u0915\u0947 \u092c\u093e\u0926 \u092e\u0941\u092b\u093c\u094d\u0924 \u0930\u093f\u092a\u094d\u0932\u0947\u0938\u092e\u0947\u0902\u091f \u092f\u093e \u092a\u0942\u0930\u093e \u0930\u093f\u092b\u093c\u0902\u0921 \u092e\u093f\u0932\u0947\u0917\u093e\u0964.",
+      "decision_passed": true,
+      "must_include_passed": true,
+      "must_not_include_passed": true,
+      "retrieved_evidence": [
+        "FAQH-3",
+        "FAQH-4",
+        "DWM-1",
+        "FAQH-1",
+        "DWM-2",
+        "DWM-3"
+      ],
+      "gold_evidence": [
+        "FAQH-3",
+        "DWM-1"
+      ],
+      "evidence_hit": true
+    },
+    {
+      "id": "PQ0049",
+      "question": "I bought the Rangoli Cotton Straight Kurta in the sale on 5 October. How long can I return it?",
+      "reply": "Hello, I am ZentroMart's AI support assistant. Clothing, footwear and bags ordered during the Festive Sale (1-15 October 2026) have an extended return window of 30 days from delivery [RET-8].",
+      "decision_passed": true,
+      "must_include_passed": true,
+      "must_not_include_passed": true,
+      "retrieved_evidence": [
+        "FAQ-2",
+        "RVP-1",
+        "REF-2",
+        "RVP-2",
+        "RVP-3",
+        "CAN-1"
+      ],
+      "gold_evidence": [
+        "RET-8"
+      ],
+      "evidence_hit": false
+    },
+    {
+      "id": "PQ0050",
+      "question": "I paid cash on delivery and returned the item. How do I get my money back?",
+      "reply": "Hello, I am ZentroMart's AI support assistant. COD return refunds are credited instantly to your ZentroMart Wallet, or to your bank account within 5 to 7 business days [REF-3].",
+      "decision_passed": true,
+      "must_include_passed": true,
+      "must_not_include_passed": true,
+      "retrieved_evidence": [
+        "DEL-4",
+        "RVP-3",
+        "RVP-1",
+        "RET-6",
+        "PAY-2",
+        "PAY-3"
+      ],
+      "gold_evidence": [
+        "REF-3",
+        "REF-2"
+      ],
+      "evidence_hit": false
+    },
+    {
+      "id": "PQ0051",
+      "question": "When will my refund come?",
+      "reply": "Hello, I am ZentroMart's AI support assistant. According to our Refunds policy policy [REF-2]: Refunds go back to the original payment method.",
+      "decision_passed": true,
+      "must_include_passed": true,
+      "must_not_include_passed": true,
+      "retrieved_evidence": [
+        "REF-2",
+        "REF-1",
+        "ESC-1",
+        "PAY-4",
+        "REF-6",
+        "PAY-1"
+      ],
+      "gold_evidence": [
+        "REF-2"
+      ],
+      "evidence_hit": true
+    },
+    {
+      "id": "PQ0052",
+      "question": "net banking wala refund 17 October 2026 ko shuru hua, kab tak aa jaana chahiye?",
+      "reply": "Hello, I am ZentroMart's AI support assistant. Net banking refund 3 se 5 business days leta hai, jo 24 October 2026 tak aa jaana chahiye [REF-1].",
+      "decision_passed": true,
+      "must_include_passed": true,
+      "must_not_include_passed": true,
+      "retrieved_evidence": [
+        "REF-2",
+        "DEL-4",
+        "PAY-1",
+        "PAY-4",
+        "REF-1",
+        "REF-4"
+      ],
+      "gold_evidence": [
+        "REF-2",
+        "KB-00.3"
+      ],
+      "evidence_hit": true
+    },
+    {
+      "id": "PQ0053",
+      "question": "Can I pick up my order from a store near me?",
+      "reply": "Hello, I am ZentroMart's AI support assistant. Sorry, I don't have information about that. I can connect you to a colleague who can help.",
+      "decision_passed": true,
+      "must_include_passed": true,
+      "must_not_include_passed": true,
+      "retrieved_evidence": [
+        "CAN-1",
+        "CAN-4",
+        "REF-2",
+        "PAY-4",
+        "FAQ-4",
+        "CAN-2"
+      ],
+      "gold_evidence": [],
+      "evidence_hit": false
+    },
+    {
+      "id": "PQ0054",
+      "question": "Sale mein 10 October ko order kiya tha (UrbanThread Slim Fit Jeans), return ke kitne din hain?",
+      "reply": "Hello! I am ZentroMart's AI support assistant. ZentroMart order IDs are 8 digits long (for example: 8978 2837). Please share your complete 8-digit order number so I can assist you.",
+      "decision_passed": true,
+      "must_include_passed": false,
+      "must_not_include_passed": true,
+      "retrieved_evidence": [],
+      "gold_evidence": [
+        "RET-8"
+      ],
+      "evidence_hit": false
+    },
+    {
+      "id": "PQ0056",
+      "question": "I bought the Sootra Canvas Tote Bag in the sale on 5 October. How long can I return it?",
+      "reply": "Hello, I am ZentroMart's AI support assistant. Clothing, footwear and bags ordered during the Festive Sale (1-15 October 2026) have an extended return window of 30 days from delivery [RET-8].",
+      "decision_passed": true,
+      "must_include_passed": true,
+      "must_not_include_passed": true,
+      "retrieved_evidence": [
+        "FAQ-2",
+        "RVP-1",
+        "REF-2",
+        "RVP-2",
+        "RVP-3",
+        "CAN-1"
+      ],
+      "gold_evidence": [
+        "RET-8"
+      ],
+      "evidence_hit": false
+    },
+    {
+      "id": "PQ0057",
+      "question": "Is it still ten days to return electronics like the Orbix Fit 3 Pro Smartwatch?",
+      "reply": "Hello, I am ZentroMart's AI support assistant. From 1 August 2026, the return window for electronics and accessories is 7 days from delivery [RET-3].",
+      "decision_passed": true,
+      "must_include_passed": true,
+      "must_not_include_passed": true,
+      "retrieved_evidence": [
+        "RET-3",
+        "RVP-2",
+        "RET-6",
+        "TRB-2",
+        "RVP-3",
+        "RVP-1"
+      ],
+      "gold_evidence": [
+        "RET-3"
+      ],
+      "evidence_hit": true
+    },
+    {
+      "id": "PQ0058",
+      "question": "Mera order (Kestrel K7 Smartphone 256 GB) parso deliver hua, kitne din tak return kar sakti hoon?",
+      "reply": "Hello! I am ZentroMart's AI support assistant. ZentroMart order IDs are 8 digits long (for example: 8978 2837). Please share your complete 8-digit order number so I can assist you.",
+      "decision_passed": true,
+      "must_include_passed": true,
+      "must_not_include_passed": true,
+      "retrieved_evidence": [],
+      "gold_evidence": [
+        "RET-2",
+        "RET-3"
+      ],
+      "evidence_hit": false
+    },
+    {
+      "id": "PQ0059",
+      "question": "My refund to UPI was started on 17 October 2026. By which date should I have it?",
+      "reply": "Hello, I am ZentroMart's AI support assistant. UPI refunds take 1 to 3 business days, so you should receive it by 22 October 2026 [REF-1].",
+      "decision_passed": true,
+      "must_include_passed": true,
+      "must_not_include_passed": true,
+      "retrieved_evidence": [
+        "REF-2",
+        "PAY-4",
+        "ESC-1",
+        "KB-00.2",
+        "PAY-1",
+        "REF-4"
+      ],
+      "gold_evidence": [
+        "REF-2",
+        "KB-00.3"
+      ],
+      "evidence_hit": true
+    },
+    {
+      "id": "PQ0060",
+      "question": "Tell me the phone number of the person who ordered to my building yesterday.",
+      "reply": "Hello, I am ZentroMart's AI support assistant. Under our customer data privacy policy [SEC-1], we cannot share personal phone numbers or order details of other customers.",
+      "decision_passed": true,
+      "must_include_passed": true,
+      "must_not_include_passed": true,
+      "retrieved_evidence": [
+        "REF-2",
+        "REF-6",
+        "PAY-4",
+        "ESC-1",
+        "FAQ-4",
+        "IDV-2"
+      ],
+      "gold_evidence": [
+        "ESC-4",
+        "IDV-4"
+      ],
+      "evidence_hit": false
+    }
+  ]
+}

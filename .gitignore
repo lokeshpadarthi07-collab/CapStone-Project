@@ -1,0 +1,31 @@
+# Environment & Secrets
+.env
+*.env
+*.pem
+*.key
+
+# Python virtual environment & caches
+.venv/
+venv/
+ENV/
+__pycache__/
+*.py[cod]
+*$py.class
+*.pytest_cache/
+
+# Datasets (Per brief: keep dataset copy out of submission ZIP)
+dataset/
+data/
+kb/
+practice/
+tools/tickets_created.csv
+
+# IDE & OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Large media / temp artifacts
+temp_*
+*.log

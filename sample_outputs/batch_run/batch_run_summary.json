@@ -1,0 +1,71 @@
+{
+  "total_files": 4,
+  "processed_files": 4,
+  "output_directory": "sample_outputs\\batch_run",
+  "results": [
+    {
+      "index": 1,
+      "input_file": "01_return_window_query.wav",
+      "transcript": "Customer inquiry from 01 return window query",
+      "reply_text": "Hello, I am ZentroMart's AI support assistant. According to our Returns policy policy: Returns are collected from the delivery address through reverse pickup.",
+      "reply_audio_file": "reply_01_return_window_query.wav",
+      "retrieved_evidence_sections": [
+        "RET-6",
+        "RET-2",
+        "RVP-1",
+        "RVP-2",
+        "RET-3",
+        "RVP-3"
+      ],
+      "processing_time_sec": 0.487
+    },
+    {
+      "index": 2,
+      "input_file": "02_wallet_refund_speed.wav",
+      "transcript": "Customer inquiry from 02 wallet refund speed",
+      "reply_text": "Refunds to the ZentroMart Wallet are instant, credited within 2 hours of initiation.",
+      "reply_audio_file": "reply_02_wallet_refund_speed.wav",
+      "retrieved_evidence_sections": [
+        "REF-2",
+        "PAY-4",
+        "REF-4",
+        "REF-6",
+        "ESC-1",
+        "PAY-1"
+      ],
+      "processing_time_sec": 0.485
+    },
+    {
+      "index": 3,
+      "input_file": "03_unsupported_midnight.wav",
+      "transcript": "Customer inquiry from 03 unsupported midnight",
+      "reply_text": "Sorry, I don't have information about that. I can connect you to a colleague who can help.",
+      "reply_audio_file": "reply_03_unsupported_midnight.wav",
+      "retrieved_evidence_sections": [
+        "DEL-4",
+        "DEL-1",
+        "DEL-2",
+        "IDV-2",
+        "CAN-1",
+        "DEL-5"
+      ],
+      "processing_time_sec": 0.513
+    },
+    {
+      "index": 4,
+      "input_file": "04_damaged_tv_escalation.wav",
+      "transcript": "Customer inquiry from 04 damaged tv escalation",
+      "reply_text": "According to our Escalation and human handover policy: Hand over at once when any of these is true:\n\n1.",
+      "reply_audio_file": "reply_04_damaged_tv_escalation.wav",
+      "retrieved_evidence_sections": [
+        "ESC-1",
+        "DWM-1",
+        "ESC-2",
+        "ESC-3",
+        "ESC-4",
+        "DWM-2"
+      ],
+      "processing_time_sec": 0.505
+    }
+  ]
+}
