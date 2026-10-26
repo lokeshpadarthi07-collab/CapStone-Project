@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZentroMart VoiceOps 2026 - AI Support Agent</title>
+    <style>
+        :root { --primary: #2563EB; --bg: #F8FAFC; --card: #FFFFFF; --text: #1E293B; --border: #E2E8F0; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: var(--bg); color: var(--text); margin: 0; padding: 24px; }
+        .container { max-width: 860px; margin: 0 auto; }
+        .header { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 24px; margin-bottom: 20px; box-shadow: 0 1px 3px rgba(0,0,0,0.05); }
+        .header h1 { margin: 0 0 8px 0; font-size: 1.8rem; color: #0F172A; }
+        .header p { margin: 0; color: #64748B; font-size: 0.95rem; }
+        .badges { display: flex; gap: 8px; margin-top: 14px; flex-wrap: wrap; }
+        .badge { background: #E0E7FF; color: #3730A3; padding: 4px 10px; border-radius: 9999px; font-size: 0.75rem; font-weight: 600; }
+        .badge-green { background: #DCFCE7; color: #166534; }
+        .chat-card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 24px; box-shadow: 0 1px 3px rgba(0,0,0,0.05); }
+        .chat-box { min-height: 250px; max-height: 420px; overflow-y: auto; border: 1px solid var(--border); border-radius: 8px; padding: 16px; margin-bottom: 16px; background: #FAFAFA; display: flex; flex-direction: column; gap: 12px; }
+        .msg { padding: 10px 14px; border-radius: 8px; max-width: 80%; line-height: 1.5; font-size: 0.95rem; }
+        .msg-user { background: #2563EB; color: #FFF; align-self: flex-end; }
+        .msg-assistant { background: #E2E8F0; color: #0F172A; align-self: flex-start; }
+        .input-bar { display: flex; gap: 8px; }
+        .input-bar input { flex: 1; padding: 12px 16px; border: 1px solid var(--border); border-radius: 8px; font-size: 0.95rem; }
+        .input-bar button { background: var(--primary); color: white; border: none; padding: 12px 24px; border-radius: 8px; font-weight: 600; cursor: pointer; }
+        .quick-chips { display: flex; gap: 8px; margin-top: 12px; flex-wrap: wrap; }
+        .chip { background: #F1F5F9; border: 1px solid #CBD5E1; padding: 6px 12px; border-radius: 6px; font-size: 0.8rem; cursor: pointer; color: #334155; }
+        .chip:hover { background: #E2E8F0; }
+        .downloads { display: flex; gap: 12px; margin-top: 18px; }
+        .btn-download { display: inline-flex; align-items: center; gap: 6px; padding: 10px 16px; border-radius: 8px; font-weight: 600; text-decoration: none; font-size: 0.85rem; border: 1px solid #CBD5E1; color: #334155; background: #FFF; }
+        .btn-download:hover { background: #F1F5F9; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🎙️ ZentroMart AI Customer Support Agent</h1>
+            <p>LLM & Generative AI Course Capstone | Consulting & Analytics Club, IIT Guwahati × Gnani.ai</p>
+            <div class="badges">
+                <span class="badge badge-green">✓ Active Vercel Cloud Serverless Function</span>
+                <span class="badge">Reference Date: 20 October 2026</span>
+                <span class="badge">Team: Team_VoiceOps_2026</span>
+            </div>
+            <div class="downloads">
+                <a href="/report.pdf" class="btn-download" download>📄 Download Report PDF</a>
+                <a href="/team_voiceops_2026_voiceops.zip" class="btn-download" download>📦 Download Submission ZIP</a>
+            </div>
+        </div>
+
+        <div class="chat-card">
+            <h3>💬 Grounded Customer Support Chat</h3>
+            <div class="chat-box" id="chatBox">
+                <div class="msg msg-assistant">Hello! I am ZentroMart's AI customer support assistant. How may I help you today? You can ask about order returns, refund timelines, or enter an Order ID.</div>
+            </div>
+            <form id="chatForm" onsubmit="sendQuery(event)">
+                <div class="input-bar">
+                    <input type="text" id="userInput" placeholder="Ask a question or enter order ID (e.g. 8978 2837)..." autocomplete="off" required>
+                    <button type="submit" id="sendBtn">Send</button>
+                </div>
+            </form>
+            <div class="quick-chips">
+                <span style="font-size: 0.8rem; color: #64748B; align-self: center;">Quick Questions:</span>
+                <button type="button" class="chip" onclick="ask('How fast are refunds to the ZentroMart Wallet?')">Wallet Refund Speed</button>
+                <button type="button" class="chip" onclick="ask('Can I schedule a delivery at midnight?')">Midnight Delivery</button>
+                <button type="button" class="chip" onclick="ask('Order 8978 2837. Last 4 digits 4533. Damaged TV.')">Damaged TV Claim</button>
+                <button type="button" class="chip" onclick="ask('Maine Gulmohar Matte Lipstick khol liya hai, kya wapas hoga?')">Opened Lipstick (Hindi)</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        async function sendQuery(e) {
+            if (e) e.preventDefault();
+            const inp = document.getElementById('userInput');
+            const txt = inp.value.trim();
+            if (!txt) return;
+            inp.value = '';
+
+            const box = document.getElementById('chatBox');
+            box.innerHTML += `<div class="msg msg-user">${escapeHtml(txt)}</div>`;
+            box.scrollTop = box.scrollHeight;
+
+            const btn = document.getElementById('sendBtn');
+            btn.disabled = true;
+            btn.innerText = 'Thinking...';
+
+            try {
+                const res = await fetch('/api/chat', {
+                    method: 'POST',
+                    headers: {'Content-Type': 'application/json'},
+                    body: JSON.stringify({message: txt})
+                });
+                const data = await res.json();
+                box.innerHTML += `<div class="msg msg-assistant">${escapeHtml(data.reply || 'No response')}</div>`;
+            } catch (err) {
+                box.innerHTML += `<div class="msg msg-assistant" style="color: #DC2626;">Error communicating with agent: ${err.message}</div>`;
+            } finally {
+                btn.disabled = false;
+                btn.innerText = 'Send';
+                box.scrollTop = box.scrollHeight;
+            }
+        }
+
+        function ask(text) {
+            document.getElementById('userInput').value = text;
+            sendQuery();
+        }
+
+        function escapeHtml(t) {
+            const div = document.createElement('div');
+            div.textContent = t;
+            return div.innerHTML;
+        }
+    </script>
+</body>
+</html>
