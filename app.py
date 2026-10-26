@@ -368,6 +368,19 @@ from fastapi.responses import HTMLResponse, JSONResponse, FileResponse, Response
 
 app = FastAPI(title="ZentroMart VoiceOps 2026", description="Interactive Customer Support Agent API")
 
+@app.middleware("http")
+async def vercel_path_middleware(request: Request, call_next):
+    forwarded = request.headers.get("x-forwarded-uri") or request.headers.get("x-matched-path")
+    if forwarded and forwarded.strip():
+        request.scope["path"] = forwarded.split("?")[0]
+    elif request.scope["path"].startswith("/api/index.py"):
+        remainder = request.scope["path"][len("/api/index.py"):]
+        request.scope["path"] = remainder if remainder else "/"
+    elif request.scope["path"].startswith("/api/index"):
+        remainder = request.scope["path"][len("/api/index"):]
+        request.scope["path"] = remainder if remainder else "/"
+    return await call_next(request)
+
 @app.exception_handler(Exception)
 async def global_exception_handler(request: Request, exc: Exception):
     import traceback
@@ -377,14 +390,15 @@ async def global_exception_handler(request: Request, exc: Exception):
     )
 
 @app.get("/", response_class=HTMLResponse)
+@app.get("/index.html", response_class=HTMLResponse)
+@app.get("/api", response_class=HTMLResponse)
+@app.get("/api/index", response_class=HTMLResponse)
+@app.get("/api/index.py", response_class=HTMLResponse)
 def index():
     return HTMLResponse(content=_VERCEL_HTML)
 
-@app.get("/index.html", response_class=HTMLResponse)
-def index_html():
-    return HTMLResponse(content=_VERCEL_HTML)
-
 @app.post("/api/chat")
+@app.post("/chat")
 async def chat_endpoint(request: Request):
     try:
         data = await request.json()
@@ -399,6 +413,7 @@ async def chat_endpoint(request: Request):
         return JSONResponse({"error": str(e)}, status_code=500)
 
 @app.get("/report.pdf")
+@app.get("/api/report.pdf")
 def get_report():
     p = Path(__file__).resolve().parent / "report.pdf"
     if p.exists():
@@ -406,6 +421,7 @@ def get_report():
     return Response(content="Report not found", status_code=404)
 
 @app.get("/team_voiceops_2026_voiceops.zip")
+@app.get("/api/team_voiceops_2026_voiceops.zip")
 def get_zip():
     p = Path(__file__).resolve().parent / "team_voiceops_2026_voiceops.zip"
     if p.exists():
