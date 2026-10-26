@@ -86,10 +86,13 @@ def create_ticket(summary: str, order_id: str = None,
            'created_at': datetime.now().isoformat(timespec='seconds'),
            'order_id': order_id or '', 'intent': intent or '',
            'reason': reason or '', 'summary': summary}
-    fresh = not os.path.exists(_TICKETS)
-    with open(_TICKETS, 'a', encoding='utf-8', newline='') as handle:
-        writer = csv.DictWriter(handle, fieldnames=list(row))
-        if fresh:
-            writer.writeheader()
-        writer.writerow(row)
+    try:
+        fresh = not os.path.exists(_TICKETS)
+        with open(_TICKETS, 'a', encoding='utf-8', newline='') as handle:
+            writer = csv.DictWriter(handle, fieldnames=list(row))
+            if fresh:
+                writer.writeheader()
+            writer.writerow(row)
+    except Exception:
+        pass
     return {'created': True, 'ticket_id': tid}
